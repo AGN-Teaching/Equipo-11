@@ -41,4 +41,18 @@ En cuanto a la elección del lenguaje de programación, como equipo hemos decidi
 
 
 # ANTECEDENTES
-U
+<p align="justify">
+Un servicio de transporte ofrece dos modalidades de desplazamiento: transporte de pasajeros y transporte de carga. Para cada categoría de servicio, se cuenta con una flota de vehículos específicos, cada uno diferenciado por su capacidad de transporte, ya sea de personas o de mercancías.
+</p>
+
+<p align="justify">
+Los clientes que desean hacer uso de este servicio deben llevar a cabo un proceso de registro en el cual proporcionan sus datos personales, incluyendo nombre, información de identificación y datos de una tarjeta de crédito.
+</p>
+
+<p align="justify">
+La reserva de un vehículo puede abarcar uno o más automóviles, especificando las fechas de recogida y entrega, así como los nombres y licencias de conducir de los individuos que se encargarán de operar dichos vehículos.
+</p>
+
+<p align="justify">
+Es importante tener en cuenta que, en determinadas ocasiones, algunos vehículos podrán requerir mantenimiento en el taller, lo que conllevará a su no disponibilidad durante ciertos periodos.
+</p>
