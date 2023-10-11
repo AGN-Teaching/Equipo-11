@@ -73,3 +73,27 @@ La clase "Persona" se ha concebido con el propósito de registrar el nombre y la
 <p align="justify">
 La clase "Vehículo" adquiere un papel crucial en el proyecto al permitirnos distinguir entre vehículos de pasajeros y de carga, especificando sus capacidades y su disponibilidad. Por último, la clase "Main" actúa como la entidad principal desde la cual se ejecutan todas las operaciones y procesos del código, lo que culmina en el registro de la solicitud de servicio. A continuación, procederemos a ofrecer una descripción más detallada de cada una de estas clases.
 </p>
+
+**-	TARJETA DE CRÉDITO**
+ATRIBUTOS:
+COMPORTAMIENTO: 
+
+**-	CLIENTE**
+ATRIBUTOS:
+COMPORTAMIENTO:
+
+**-	PERSONA**
+ATRIBUTOS:
+COMPORTAMIENTO:
+
+**-	TRANSPORTE**
+ATRIBUTOS:
+COMPORTAMIENTO:
+
+**-	VEHÍCULO**
+ATRIBUTOS:
+COMPORTAMIENTO:
+
+**-	MAÍN**
+ATRIBUTOS:
+COMPORTAMIENTO:
