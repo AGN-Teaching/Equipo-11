@@ -27,7 +27,6 @@ Abel García Nájera
 
 
 # RESUMEN
-Claro, aquí tienes una versión más entendible pero aún formal:
 
 El proyecto final del curso **"Programación Orientada a Objetos"** se concentra en la aplicación de los conceptos aprendidos a lo largo del trimestre. Esto incluye el uso de conceptos como polimorfismo, herencia, clases, subclases, entre otros. Además, destacamos la relevancia de los diagramas UML para organizar y visualizar las clases, sus atributos y los métodos que contienen.
 
