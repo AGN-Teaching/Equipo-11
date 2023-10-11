@@ -16,13 +16,13 @@ UEA: *PROGRAMACIÓN ORIENTADA A OBJETOS*
 *ESTUDIANTE:*
 
 
-Daniela Nava Martínez                MATRÍCULA: 2223028762
+- Daniela Nava Martínez                 2223028762
 
 
-Jesús Emmanuel Ramírez Aguilera      MATRÍCULA: 2223068873
+- Jesús Emmanuel Ramírez Aguilera       2223068873
 
 
-Anaid Olguin Rico                    MATRÍCULA: 2203024973
+- Anaid Olguin Rico                     2203024973
 
 *PROFESOR:* 
 
