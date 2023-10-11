@@ -28,7 +28,7 @@ Abel García Nájera
 
 # RESUMEN
 <p align="justify">
-El proyecto final del curso **"Programación Orientada a Objetos"** se concentra en la aplicación de los conceptos aprendidos a lo largo del trimestre. Esto incluye el uso de conceptos como polimorfismo, herencia, clases, subclases, entre otros. Además, destacamos la relevancia de los diagramas UML para organizar y visualizar las clases, sus atributos y los métodos que contienen.
+El proyecto final del curso "Programación Orientada a Objetos" se concentra en la aplicación de los conceptos aprendidos a lo largo del trimestre. Esto incluye el uso de conceptos como polimorfismo, herencia, clases, subclases, entre otros. Además, destacamos la relevancia de los diagramas UML para organizar y visualizar las clases, sus atributos y los métodos que contienen.
 </p>
 
 <p align="justify">
@@ -36,7 +36,7 @@ El propósito principal de este proyecto es desarrollar un servicio de transport
 </p>
 
 <p align="justify">
-En cuanto a la elección del lenguaje de programación, como equipo hemos decidido utilizar **Python**. Esta elección se basa en los conocimientos adquiridos a lo largo del trimestre, ya que hemos encontrado que Python es altamente efectivo para abordar los desafíos que surgen durante el desarrollo del código. Cuando enfrentamos dificultades, nuestro conocimiento de este lenguaje nos capacita para abordarlas de manera completa y precisa.
+En cuanto a la elección del lenguaje de programación, como equipo hemos decidido utilizar Python. Esta elección se basa en los conocimientos adquiridos a lo largo del trimestre, ya que hemos encontrado que Python es altamente efectivo para abordar los desafíos que surgen durante el desarrollo del código. Cuando enfrentamos dificultades, nuestro conocimiento de este lenguaje nos capacita para abordarlas de manera completa y precisa.
 </p>
 
 
