@@ -75,25 +75,42 @@ La clase "Vehículo" adquiere un papel crucial en el proyecto al permitirnos dis
 </p>
 
 **-	TARJETA DE CRÉDITO**
+
 ATRIBUTOS:
+
 COMPORTAMIENTO: 
 
+
 **-	CLIENTE**
+
 ATRIBUTOS:
+
 COMPORTAMIENTO:
+
 
 **-	PERSONA**
+
 ATRIBUTOS:
+
 COMPORTAMIENTO:
+
 
 **-	TRANSPORTE**
+
 ATRIBUTOS:
+
 COMPORTAMIENTO:
+
 
 **-	VEHÍCULO**
+
 ATRIBUTOS:
+
 COMPORTAMIENTO:
 
+
 **-	MAÍN**
+
 ATRIBUTOS:
+
 COMPORTAMIENTO:
