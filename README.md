@@ -17,8 +17,8 @@ UEA: *PROGRAMACIÓN ORIENTADA A OBJETOS*
 
 
 - Daniela Nava Martínez                 2223028762
-- Jesús Emmanuel Ramírez Aguilera       2223068873
 - Anaid Olguin Rico                     2203024973
+- Jesús Emmanuel Ramírez Aguilera       2223068873
 
 *PROFESOR:* 
 
@@ -56,3 +56,5 @@ La reserva de un vehículo puede abarcar uno o más automóviles, especificando 
 <p align="justify">
 Es importante tener en cuenta que, en determinadas ocasiones, algunos vehículos podrán requerir mantenimiento en el taller, lo que conllevará a su no disponibilidad durante ciertos periodos.
 </p>
+
+# ANÁLISIS DEL PROBLEMA
