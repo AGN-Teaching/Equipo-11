@@ -59,61 +59,32 @@ Es importante tener en cuenta que, en determinadas ocasiones, algunos vehículos
 
 # ANÁLISIS DEL PROBLEMA
 <p align="justify">
-Para la elaboración de nuestro proyecto, hemos empleado el lenguaje de programación Python con el propósito de desarrollar la aplicación "Renta de Transporte". Como se mencionó previamente, hemos empleado diversas clases en este proyecto, a saber: "Tarjeta de Crédito", "Cliente", "Persona", "Transporte", "Vehículo" y "Main". Cada una de estas clases ha sido concebida con atributos específicos y una función definida.
+En la creación de nuestro proyecto, empleamos el lenguaje de programación Python para desarrollar un sistema de "Renta de Transporte". Este sistema se basa en varias clases, incluyendo Transporte, Sistema de Transporte, Registro de Rentas, Menú, Cliente y Main. Cada una de estas clases ha sido diseñada con atributos específicos y funciones bien definidas para cumplir con su respectiva funcionalidad.
 </p>
 
 <p align="justify">
-La elección de la clase "Tarjeta de Crédito" reviste una importancia fundamental, ya que esta requiere los datos de una tarjeta de crédito para llevar a cabo el proceso de contratación del servicio. La clase "Cliente", por su parte, ostenta un rol preponderante, ya que la consideramos como el actor principal que inicia el proceso de solicitud del servicio.
+La clase "Transporte" es fundamental para determinar si un vehículo se encuentra en mantenimiento o está disponible. Además, dentro de esta clase, distinguimos dos tipos de transportes: los de pasajeros y los de carga. Esto nos permite conocer la capacidad de personas o peso, según corresponda.
 </p>
 
 <p align="justify">
-La clase "Persona" se ha concebido con el propósito de registrar el nombre y la identificación de la persona que fungirá como el conductor del vehículo. Por otro lado, la clase "Transporte" cumple con la función de recopilar datos relativos al vehículo, incluyendo las fechas de solicitud y entrega del automóvil, además de los datos del conductor.
+La clase "Sistema de Transporte" desempeña un papel crucial al recopilar todos los datos necesarios para el proyecto. Esto incluye la solicitud de fechas de recolección y entrega, la cantidad de pasajeros, así como los datos del cliente y los detalles de la tarjeta de crédito, entre otros.
 </p>
-  
+
 <p align="justify">
-La clase "Vehículo" adquiere un papel crucial en el proyecto al permitirnos distinguir entre vehículos de pasajeros y de carga, especificando sus capacidades y su disponibilidad. Por último, la clase "Main" actúa como la entidad principal desde la cual se ejecutan todas las operaciones y procesos del código, lo que culmina en el registro de la solicitud de servicio. A continuación, procederemos a ofrecer una descripción más detallada de cada una de estas clases.
+El "Registro de Rentas" se encarga de capturar la fecha de inicio y finalización de una renta, así como el nombre del cliente y su licencia de manejo.
 </p>
 
-**-	TARJETA DE CRÉDITO**
+<p align="justify">
+La "Clase Menú" no posee atributos propios, ya que se centra en facilitar la creación y gestión de menús en el programa. Proporciona métodos para mostrar opciones, leer la elección del usuario y ejecutar las opciones seleccionadas.
+</p>
 
-ATRIBUTOS:
+<p align="justify">
+En la clase "Cliente", se almacenan datos clave, como el nombre del cliente, su identificación, número de tarjeta de crédito, fecha de caducidad y código de seguridad.
+</p>
 
-COMPORTAMIENTO: 
-
-
-**-	CLIENTE**
-
-ATRIBUTOS:
-
-COMPORTAMIENTO:
-
-
-**-	PERSONA**
-
-ATRIBUTOS:
-
-COMPORTAMIENTO:
-
-
-**-	TRANSPORTE**
-
-ATRIBUTOS:
-
-COMPORTAMIENTO:
-
-
-**-	VEHÍCULO**
-
-ATRIBUTOS:
-
-COMPORTAMIENTO:
-
-
-**-	MAÍN**
-
-ATRIBUTOS:
-
-COMPORTAMIENTO:
+<p align="justify">
+Por último, la "Clase Main" se considera la parte principal del programa, ya que se encarga de ejecutar el código que permite obtener resultados de las clases anteriores. En resumen, cada una de estas clases cumple un rol específico en el sistema de Renta de Transporte, colaborando para su funcionamiento global.
+</p>
 
 
 
