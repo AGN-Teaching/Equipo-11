@@ -21,25 +21,40 @@ class SistemaDeTransporte:
                 except ValueError:
                     print("Formato de fecha incorrecto. Utilice el formato YYYY/MM/DD.")    
     
-    def registro_cliente(self,nombre,identificacion,tarjeta):
+    def registro_cliente(self):
         nombre = input("Nombre del cliente: ")
         identificacion = input("Identificacion del cliente: ")
         tarjeta = input("Numero de tarjeta de credito: ") #Restriccion de digitos
-        #fechatarjeta 
-        #Cvv
         cliente = Cliente (nombre, identificacion , tarjeta)
-        self.clientes.append(cliente)   
+        self.clientes.append(cliente)
+
+    def mostrar_clientes(self):
+        print ("Registro de clientes")
+        print ("")   
+        for cliente in self.clientes:
+            print(f"Nombre cliente: {cliente.nombre}")
+            print(f"Identificacion cliente: {cliente.identificacion}")
+            print(f"Tarjeta cliente: {cliente.tarjeta_credito}")
+            print("")
    
     def mostrar_vehiculos(self):
         print ("Lista de vehiculos")
         
         for vehiculo in self.vehiculos:
-            print (f"ID: {vehiculo.identificador}")
-            print (f"Tipo: {vehiculo.tipo}")
-            print (f"Fecha de mantenimiento: {vehiculo.fecha}")
             if isinstance(vehiculo, TransportePasajeros):
+                print("Lista de vehiculos de transporte ")
+                print (f"ID: {vehiculo.identificador}")
+                print (f"Tipo: {vehiculo.tipo_vehiculo}")
+                print (f"Fecha de mantenimiento: {vehiculo.fecha_mantenimiento}")
                 print(f"Numero de pasajeros: {vehiculo.numero_pasajeros}")
-            elif isinstance (vehiculo,TransporteCarga):
+                print("")
+
+        for vehiculo in self.vehiculos:
+            if isinstance (vehiculo,TransporteCarga):
+                print("Lista de vehiculos de carga ")
+                print (f"ID: {vehiculo.identificador}")
+                print (f"Tipo: {vehiculo.tipo_vehiculo}")
+                print (f"Fecha de mantenimiento: {vehiculo.fecha_mantenimiento}")
                 print(f"Capacidad de carga: {vehiculo.capacidad_carga} kg")
 
     def registar_renta(self):
@@ -51,17 +66,15 @@ class SistemaDeTransporte:
             licencia = input("Licencia de manejo: ")
             renta = RegistroRenta(recoleccion, entrega,nombre, licencia)
             self.registro_rentas.append(renta)
-            print('self.registro_rentas')
         
-    def mostrar_rentas(self, nombre_cliente):
+    def mostrar_rentas(self):
         for renta in self.registro_rentas:
-            if renta.nombre_cliente ==nombre_cliente:
-                #auto que se rento 
-                print("Informacion renta")
-                print(f"Nombre del cliente: {renta.nombre_cliente}")
-                print(f"Licencia de manejo: {renta.licencia_manejo}")
-                print(f"Fecha de recoleccion: {renta.fecha_inicio}")
-                print(f"Fecha de entrega: {renta.fecha_fin}")
+            #auto que se rento 
+            print("Informacion renta")
+            print(f"Nombre del cliente: {renta.nombre_cliente}")
+            print(f"Licencia de manejo: {renta.licencia_manejo}")
+            print(f"Fecha de recoleccion: {renta.fecha_inicio}")
+            print(f"Fecha de entrega: {renta.fecha_fin}")
 
     def registrar_vehiculo(self):
         id = input("Registre identificador de vehiculo: ")
@@ -105,11 +118,11 @@ class SistemaDeTransporte:
                     #fechaM =fecha(partes[3])
                     if tipo_vehiculo == "Pasajeros":
                         numero_pasajeros = int (partes[4])                        
-                        vehiculo_personas = TransportePasajeros(tipo_vehiculo,identificacion,partes[2],partes[3],numero_pasajeros)
+                        vehiculo_personas = TransportePasajeros(identificacion,partes[2],partes[3],numero_pasajeros)
                         self.vehiculos.append(vehiculo_personas)
                     elif tipo_vehiculo == "Carga":
-                        capacidad_carga = float (parte [5])
-                        vehiculo_carga = TransporteCarga(tipo_vehiculo,identificacion,partes[2],partes[3],capacidad_carga)
+                        capacidad_carga = float (partes[4])
+                        vehiculo_carga = TransporteCarga(identificacion,partes[2],partes[3],capacidad_carga)
                         self.vehiculos.append(vehiculo_carga)
                     else:
                         print("Entrada no valida")
@@ -123,7 +136,7 @@ class SistemaDeTransporte:
                 for linea in lineas:
                     partes = linea.split(",")
                     print(linea) 
-                    self.registar_renta(RegistroRenta(partes[0],partes[1],partes[2],partes[3],partes[4]))
+                    renta = RegistroRenta(partes[0],partes[1],partes[2],partes[3])#falta pedir vehiculo[4]
                     self.registro_rentas.append(renta)
             
         except FileNotFoundError:
@@ -142,24 +155,19 @@ class SistemaDeTransporte:
             archivo_registro.write(f"Nombre del conductor: {conductor.nombre}\n")
             archivo_registro.write(f"Identificación del conductor: {conductor.identificacion}\n")
 
-
-    #def mostrar_datos(self)
-
-    def cambiar_fecha_actual(self):
-        pass
-
     def menu(self):
         print("Menu")
         menu = Menu()
         opciones = {
             '1': ('Registrar cliente', self.registro_cliente),
-            '2': ('Mostar lista de Vehiculos', self.mostrar_vehiculos),
-            '3': ('Registar una renta', self.registar_renta),
-            '4': ('Registar vehiculo', self.registrar_vehiculo),
-            '5': ('Guardar datos', self.guardar_datos),
-            '6': ('Cargar datos',self.cargar_datos),
-            '7': ('Salir',exit),
-            '8': ('Cambiar fecha',self.cambiar_fecha_actual)
+            '2': ('Mostrar clientes', self.mostrar_clientes),
+            '3': ('Mostar lista de Vehiculos', self.mostrar_vehiculos),
+            '4': ('Registar una renta', self.registar_renta),
+            '5': ('Mostrar rentas', self.mostrar_rentas),
+            '6': ('Registar vehiculo', self.registrar_vehiculo),
+            '7': ('Guardar datos', self.guardar_datos),
+            '8': ('Cargar datos',self.cargar_datos),
+            '9': ('Salir',exit),
         }
 
-        menu.generar_menu(opciones, '7')
+        menu.generar_menu(opciones, '9')
