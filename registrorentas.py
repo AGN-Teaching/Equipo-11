@@ -1,6 +1,6 @@
 class RegistroRenta:
-    def __init__(self, fecha_inicio,fecha_fin,nombre_cliente:str,licencia_manejo:int):
-        self.vehiculos = []
+    def __init__(self, fecha_inicio,fecha_fin,nombre_cliente:str,licencia_manejo:int, vehiculos):
+        self.vehiculos = vehiculos
         self.fecha_inicio = fecha_inicio
         self.fecha_fin = fecha_fin
         self.nombre_cliente = nombre_cliente

@@ -10,17 +10,20 @@ class SistemaDeTransporte:
         self.clientes = []
         self.registro_rentas = []
         self.fecha_actual = datetime.now()
-
+    
     @staticmethod
     def solicitar_fecha(prompt):
             while True:
                 fecha_str = input(prompt)
                 try:
                     fecha = datetime.strptime(fecha_str, "%Y/%m/%d")
-                    return fecha.strftime("%Y/%m/%d")
+                    return fecha
                 except ValueError:
                     print("Formato de fecha incorrecto. Utilice el formato YYYY/MM/DD.")    
     
+    def fecha_to_str(self, fecha):
+        return datetime.strftime(fecha, "%Y/%m/%d")
+
     def registro_cliente(self):
         nombre = input("Nombre del cliente: ")
         identificacion = input("Identificacion del cliente: ")
@@ -37,25 +40,43 @@ class SistemaDeTransporte:
             print(f"Tarjeta cliente: {cliente.tarjeta_credito}")
             print("")
    
-    def mostrar_vehiculos(self):
+    def vehiculo_disponible(self, solo_mostar_disponibles, vehiculo):
+        if solo_mostar_disponibles == False:
+            return True
+
+        return self.fecha_actual != vehiculo.fecha_mantenimiento
+
+    def mostrar_vehiculos(self, solo_mostar_disponibles = False):
         print ("Lista de vehiculos")
         
         for vehiculo in self.vehiculos:
-            if isinstance(vehiculo, TransportePasajeros):
+            if isinstance(vehiculo, TransportePasajeros) and self.vehiculo_disponible(solo_mostar_disponibles, vehiculo):
                 print("Lista de vehiculos de transporte ")
                 print (f"ID: {vehiculo.identificador}")
                 print (f"Tipo: {vehiculo.tipo_vehiculo}")
-                print (f"Fecha de mantenimiento: {vehiculo.fecha_mantenimiento}")
+                print (f"Fecha de mantenimiento: {self.fecha_to_str(vehiculo.fecha_mantenimiento)}")
                 print(f"Numero de pasajeros: {vehiculo.numero_pasajeros}")
                 print("")
 
         for vehiculo in self.vehiculos:
-            if isinstance (vehiculo,TransporteCarga):
+            if isinstance (vehiculo,TransporteCarga) and self.vehiculo_disponible(solo_mostar_disponibles, vehiculo):
                 print("Lista de vehiculos de carga ")
                 print (f"ID: {vehiculo.identificador}")
                 print (f"Tipo: {vehiculo.tipo_vehiculo}")
-                print (f"Fecha de mantenimiento: {vehiculo.fecha_mantenimiento}")
+                print (f"Fecha de mantenimiento: {self.fecha_to_str(vehiculo.fecha_mantenimiento)}")
                 print(f"Capacidad de carga: {vehiculo.capacidad_carga} kg")
+
+ 
+    def solicitar_vehiculos(self):
+        vehiculos = []
+        print("Elije los identificadores de vehiculos a rentar uno por uno")
+        self.mostrar_vehiculos(True)
+        
+        while (opcion := input('Opcion: ')) not in ["r"]:
+            print("r) salir")
+            vehiculos.append(opcion)
+
+        return vehiculos
 
     def registar_renta(self):
         #falta pedir vehiculoss
@@ -64,7 +85,9 @@ class SistemaDeTransporte:
             #agrega 1 o mas
             nombre = input("Nombre del cliente: ")
             licencia = input("Licencia de manejo: ")
-            renta = RegistroRenta(recoleccion, entrega,nombre, licencia)
+            vehiculos = self.solicitar_vehiculos()
+
+            renta = RegistroRenta(recoleccion, entrega, nombre, licencia, vehiculos)
             self.registro_rentas.append(renta)
         
     def mostrar_rentas(self):
@@ -73,15 +96,16 @@ class SistemaDeTransporte:
             print("Informacion renta")
             print(f"Nombre del cliente: {renta.nombre_cliente}")
             print(f"Licencia de manejo: {renta.licencia_manejo}")
-            print(f"Fecha de recoleccion: {renta.fecha_inicio}")
-            print(f"Fecha de entrega: {renta.fecha_fin}")
+            print(f"Fecha de recoleccion: {self.fecha_to_str(renta.fecha_inicio)}")
+            print(f"Fecha de entrega: {self.fecha_to_str(renta.fecha_fin)}")
+            print(f"Vehiculos: {renta.vehiculos}")
 
     def registrar_vehiculo(self):
         id = input("Registre identificador de vehiculo: ")
         tipo = input ("Registre tipo de vehiculo: ")
         fecha = self.solicitar_fecha("Registre fecha de mantenimiento:  ")
-        transporte = input ("¿El transporte es de pasajeros o de carga (p/c)?: ")   
-
+        transporte = input ("¿El transporte es de pasajeros o de carga (p/c)?: ")
+       
         if transporte == "p":
             personas = input("Registre el numero de personas: ")
             vehiculo_personas = TransportePasajeros(id,tipo,fecha,personas)
@@ -113,16 +137,18 @@ class SistemaDeTransporte:
                     partes = linea.split(",")
                     print(linea)
 
-                    tipo_vehiculo = partes[0]
+                    tipo_transporte = partes[0]
                     identificacion = int(partes[1])
-                    #fechaM =fecha(partes[3])
-                    if tipo_vehiculo == "Pasajeros":
+                    tipo_vehiculo = partes[2]
+                    fecha_mantenimiento =  datetime.strptime(partes[3], "%Y/%m/%d")
+
+                    if tipo_transporte == "Pasajeros":
                         numero_pasajeros = int (partes[4])                        
-                        vehiculo_personas = TransportePasajeros(identificacion,partes[2],partes[3],numero_pasajeros)
+                        vehiculo_personas = TransportePasajeros(identificacion, tipo_vehiculo, fecha_mantenimiento,numero_pasajeros)
                         self.vehiculos.append(vehiculo_personas)
-                    elif tipo_vehiculo == "Carga":
+                    elif tipo_transporte == "Carga":
                         capacidad_carga = float (partes[4])
-                        vehiculo_carga = TransporteCarga(identificacion,partes[2],partes[3],capacidad_carga)
+                        vehiculo_carga = TransporteCarga(identificacion, tipo_vehiculo, fecha_mantenimiento,capacidad_carga)
                         self.vehiculos.append(vehiculo_carga)
                     else:
                         print("Entrada no valida")
@@ -136,11 +162,18 @@ class SistemaDeTransporte:
                 for linea in lineas:
                     partes = linea.split(",")
                     print(linea) 
-                    renta = RegistroRenta(partes[0],partes[1],partes[2],partes[3])#falta pedir vehiculo[4]
+                    fecha_colecta = datetime.strptime(partes[0], "%Y/%m/%d")
+                    fecha_entrega = datetime.strptime(partes[1], "%Y/%m/%d")
+                    cliente =partes[2]
+                    licencia =partes[3]
+                    vehiculos =partes[4].split("&")
+                    renta = RegistroRenta(fecha_colecta,fecha_entrega, cliente, licencia, vehiculos)
                     self.registro_rentas.append(renta)
             
         except FileNotFoundError:
                 print("No se encontro el archivo rentas.txt")
+        self.mostrar_vehiculos(True)
+        
 
     
     def guardar_datos(self,datos, lista_datos):
