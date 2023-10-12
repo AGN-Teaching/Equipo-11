@@ -86,6 +86,75 @@ En la clase "Cliente", se almacenan datos clave, como el nombre del cliente, su 
 Por último, la "Clase Main" se considera la parte principal del programa, ya que se encarga de ejecutar el código que permite obtener resultados de las clases anteriores. En resumen, cada una de estas clases cumple un rol específico en el sistema de Renta de Transporte, colaborando para su funcionamiento global.
 </p>
 
+A continuación, se proporciona el comportamiento faltante para cada una de las clases mencionadas en el proyecto de "Renta de Transporte":
+
+- **Transporte**
+  * ATRIBUTOS: 
+  - Identificador: número entero que identifica el vehículo.
+  - Tipo: cadena de texto que indica si el vehículo es de pasajeros o de carga.
+  - Fecha de mantenimiento: fecha en la que se programó el mantenimiento del vehículo.
+  
+  * COMPORTAMIENTO:
+  - verificar_disponibilidad(fecha): Método que verifica si el vehículo estará disponible en la fecha proporcionada.
+  - _str_: Método que devuelve una representación en cadena del objeto.
+  - guardar_datos: Método para guardar los datos del vehículo.
+
+- **Sistema de Transporte**
+  * ATRIBUTOS:
+  - vehículos: lista que almacena los objetos de vehículos, ya sean de pasajeros o de carga.
+  - clientes: lista que almacena los objetos de cliente.
+  - registro_rentas: lista que almacena los objetos de renta.
+  - fecha_actual: variable que almacena la fecha actual.
+
+  * COMPORTAMIENTO:
+  - registro_cliente(nombre, identificacion, tarjeta): Método para registrar un nuevo cliente.
+  - mostrar_vehiculos: Método que muestra una lista de los vehículos disponibles.
+  - registar_renta: Método para registrar una nueva renta, solicitando datos al usuario.
+  - mostrar_rentas(nombre_cliente): Método que muestra las rentas asociadas a un cliente específico.
+  - registrar_vehiculo: Método para registrar un nuevo vehículo, solicitando datos al usuario.
+  - cargar_datos: Método para cargar datos previamente guardados desde archivos.
+  - guardar_datos(datos, lista_datos): Método para guardar datos en un archivo.
+  - cambiar_fecha_actual: Método para cambiar la fecha actual del sistema.
+  - menu: Método que muestra el menú principal del sistema.
+
+- **Registro de Rentas**
+  * ATRIBUTOS: 
+  - vehículos: lista que almacena los vehículos que están relacionados con la renta.
+  - fecha_inicio: variable que almacena la fecha de inicio de la renta.
+  - fecha_fin: variable que almacena la fecha de finalización de la renta.
+  - nombre_cliente: una cadena de texto que almacena el nombre del cliente asociado a la renta.
+  - licencia_manejo: número entero que almacena el número de licencia de manejo del cliente.
+
+  * COMPORTAMIENTO:
+  - Métodos relacionados con la obtención y representación de los datos de una renta.
+
+- **Menú**
+  * ATRIBUTOS: 
+  No tiene atributos propios, se compone de métodos que facilitan la creación y gestión de menús en un programa, pero no define ningún atributo para almacenar información.
+
+  * COMPORTAMIENTO:
+  - mostrar_menu(opciones): Método que muestra las opciones disponibles en el menú.
+  - leer_opcion(opciones): Método que lee la elección del usuario.
+  - ejecutar_opcion(opcion, opciones): Método que ejecuta la opción seleccionada.
+  - generar_menu(opciones, opcion_salida): Método que genera y maneja el menú principal del sistema.
+
+- **Cliente**
+  * ATRIBUTOS:
+  - Nombre: cadena de texto que almacena el nombre del cliente.
+  - Identificador: almacena la identificación del cliente.
+  - Tarjeta crédito: cadena de texto que almacena el número de tarjeta del cliente.
+  - Fecha de caducidad: fecha de vencimiento de la tarjeta junto con el código de seguridad.
+
+  * COMPORTAMIENTO:
+  - Métodos relacionados con la representación y manipulación de datos del cliente.
+
+- **Main**
+  * ATRIBUTOS: 
+  No tiene una clase definida, por lo que no existen atributos de una clase en particular.
+
+  * COMPORTAMIENTO:
+  - La función "main" es el punto de entrada principal del programa. Inicializa una instancia del sistema de transporte y llama al método "menú" para ejecutar el sistema y sus funcionalidades.
+
 
 
 
