@@ -89,7 +89,7 @@ Por último, la "Clase Main" se considera la parte principal del programa, ya qu
 A continuación, se proporciona el comportamiento faltante para cada una de las clases mencionadas en el proyecto de "Renta de Transporte":
 
 
-- **Transporte**
+- **TRANSPORTE**
   
   __* ATRIBUTOS:__
   
@@ -104,8 +104,8 @@ A continuación, se proporciona el comportamiento faltante para cada una de las 
   - guardar_datos: Método para guardar los datos del vehículo.
 
 
-- **Sistema de Transporte**
-- 
+- **SISTEMA DE TRANSPORTE**
+ 
   __* ATRIBUTOS:__
   
   - vehículos: lista que almacena los objetos de vehículos, ya sean de pasajeros o de carga.
@@ -126,7 +126,7 @@ A continuación, se proporciona el comportamiento faltante para cada una de las 
   - menu: Método que muestra el menú principal del sistema.
 
 
-- **Registro de Rentas**
+- **REGISTRO DE RENTAS**
   
   __* ATRIBUTOS:__
   
@@ -141,7 +141,7 @@ A continuación, se proporciona el comportamiento faltante para cada una de las 
   - Métodos relacionados con la obtención y representación de los datos de una renta.
 
 
-- **Menú**
+- **MENÚ**
   
   __* ATRIBUTOS:__
   
@@ -155,7 +155,7 @@ A continuación, se proporciona el comportamiento faltante para cada una de las 
   - generar_menu(opciones, opcion_salida): Método que genera y maneja el menú principal del sistema.
 
 
-- **Cliente**
+- **CLIENTE**
   
  __* ATRIBUTOS:__
  
@@ -169,7 +169,7 @@ A continuación, se proporciona el comportamiento faltante para cada una de las 
   - Métodos relacionados con la representación y manipulación de datos del cliente.
 
 
-- **Main**
+- **MAIN**
   
   __* ATRIBUTOS:__
   
