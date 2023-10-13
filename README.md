@@ -319,49 +319,23 @@ Proporciona una estructura para crear y gestionar un menú interactivo en un pro
 
 <hr>
 
-### **:**
+### **CLIENTE:**
 <p align="justify">
-Proporciona una estructura para crear y gestionar un menú interactivo en un programa, permitiendo al usuario seleccionar didefrentes ocpciones y ejecutar acciones asociadas con esas opciones.
+Permite crear instancias de clientes con sus atributos iniciales y proporciona un método para obtener una representación de los datos del cliente en un formato específico.
   
-1. Método "mostrar_menú": se utiliza para mostrar el menú en la consola. Recibe un diccionario de opciones como argumento, donde las claves son las selecciones posibles del menú y los valores son listas con dos elementos. El primer elemento de cada lista es la descripción de la opción, y el segundo elemento es una función que se ejecutará si se selecciona esa opción.
+1. Método "_ _ init _ _: se ejecuta cuando se crea una nueva instancia de la clase "Cliente". Recibe tres argumentos: "nombre", "identificacion", y "tarjeta_credito".
 
- - Itera a través de las claves del diccionario (opciones) ordenadas alfabéticamente utilizando "sorted(opciones)".
+ - "nombre", "identificacion", y "tarjeta_credito" son atributos de la instancia que se inicializan con los valores pasados como argumentos. Estos atributos representan el nombre, identificación y número de tarjeta de crédito del cliente..
      
- - Muestra cada opción con su descripción utilizando "print(f' {clave}) {opciones[clave][0]}')".
+ - Los atributos "self.nombre", "self.identificacion", y "self.tarjeta_credito" almacenan los valores de los argumentos en la instancia del cliente. Estos atributos permiten acceder a la información del cliente más adelante en el programa..
       
-2. Método "leer_opción": se utiliza para leer la opción seleccionada por el usuario. Recibe el mismo diccionario de opciones como argumento.
+2. Método "guardar_datos": se utiliza para gauardar los datos del cliente:
 
-- Muestra el mensaje "Opción: " y espera a que el usuario ingrese una opción.
+- El método devuelve una cadena que contiene la información del cliente en un formato específico. En este caso, la información se concatena utilizando comas (",").
      
-- Utiliza una expresión walrus (:=) para asignar lo que el usuario ingresó a la variable "opción" y al mismo tiempo verifica si esa opción está en el diccionario de opciones (opción not in opciones).
+- La información del cliente se compone de tres partes: el nombre, la identificación y el número de tarjeta de crédito. Estas partes se concatenan utilizando "+" y se separan por comas.
      
-- Si la opción no está en el diccionario, muestra el mensaje "Opción incorrecta, vuelva a intentarlo." y continúa esperando a que el usuario ingrese una opción válida.
-     
-- Una vez que el usuario ingresa una opción válida, devuelve esa opción.
-
-3. Método "ejecutar_opción":  se utiliza para ejecutar la función asociada a la opción seleccionada. Recibe la opción seleccionada y el diccionario de opciones como argumentos.
-
-- "identificador": almacena un identificador único para el vehículo.
-  
-- "tipo_vehiculo": representa el tipo de vehículo.
-  
-- "fecha_mantenimiento": guarda la fecha de último mantenimiento del vehículo.
-
-4. Método "generar_menú": se utiliza para generar y gestionar el menú completo, incluyendo la lectura de opciones, ejecución de acciones y repetición del proceso hasta que el usuario elija una opción de salida. Recibe el diccionario de opciones y una opción de salida como argumentos.
-
-   - Inicializa la variable "opcion" como "None".
-  
-   - Entra en un bucle while que se ejecutará hasta que la opción seleccionada sea igual a la opción de salida.
-  
-   - En cada iteración del bucle:
-     
-   - Llama al método "mostrar_menu" para mostrar el menú.
-    
-   - Llama al método "leer_opcion" para que el usuario ingrese una opción válida.
-    
-   - Llama al método "ejecutar_opcion" para ejecutar la función asociada a la opción seleccionada.
-    
-   - Muestra una línea en blanco (print()) para separar las iteraciones del menú.
+- Finalmente, se devuelve la cadena con los datos del cliente.
     
   
 </p>
