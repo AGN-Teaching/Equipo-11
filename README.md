@@ -182,6 +182,18 @@ A continuación, se proporciona el comportamiento faltante para cada una de las 
  
 # DOCUMENTACIÓN
 
+### **Registro renta:**
+<p align="justify">
+Esta clase permite crear objetos de registro de renta, donde cada objeto almacena información como las flechas, el nombre del cliente, la licencia de manejo y una lista de vehículos relacionados con la renta. El método "guardar_datos" permite formatear la información para ser guardada.
+   1. Definición de la clase "RegistroRenta": representa un registro de una renta de vehículos. Esta clase tiene un contructor "_ _init_ _" y un método "guardar_datos".
+   2. Constructor "_ _init_ _": recibe varios parámetros:
+   - "fecha_inicio": representa la fecha de inicio de la renta.
+   - "fecha_fin": representa la fecha de finalización de la renta.
+  
+</p>
+
+<hr>
+
 
 
 
