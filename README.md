@@ -343,6 +343,45 @@ Permite crear instancias de clientes con sus atributos iniciales y proporciona u
 <hr>
 
 
+### **Sistema transporte:**
+<p align="justify">
+Se utiliza para gestionar un sistema de registro y renta de  vehículos, interactuando con clientes, vehículos y rentas. La clase incluye métodos para registrar clientes, vehículos, rentas, cargar y guardar datos, y presentar un menú de opciones para el usuario.
+  
+1. Importaciones de módulos: El código comienza importando varios módulos que son utilizados en el programa. Estos módulos incluyen datetime para trabajar con fechas y horas, así como varios módulos personalizados: "Cliente", "RegistroRenta", "Transporte", "TransporteCarga", "TransportePasajeros" y "Menu".
+
+2. Definición de la clase "SistemaDeTransporte": encapsula la funcionalidad del sistema de registro y renta de vehículos.
+
+3. Método "_ _ init _ _": se llama cuando se crea una instancia de la clase. En este caso, inicializa los atributos de la instancia:
+
+   - "self.vehiculos", "self.clientes" y "self.registro_rentas" son listas que almacenan objetos de vehículos, clientes y registros de alquiler, respectivamente.
+  
+   - "self.fecha_actual" almacena la fecha y hora actuales obtenidas mediante "datetime.now()".
+  
+4. Método "solicitar_fecha": permite solicitar al usuario una fecha con un mensaje (prompt) y validar que la fecha ingresada tenga el formato correcto (YYYY/MM/DD). Retorna un objeto de fecha datetime si la entrada es válida.
+
+5. Método "fecha_to_str": convierte un objeto de fecha "datetime" en una cadena de texto con el formato "YYYY/MM/DD".
+
+6. Método "registro_cliente": permite registrar un nuevo cliente. Solicita al usuario el nombre, identificación y número de tarjeta de crédito y crea una instancia de la clase "Cliente", luego la agrega a la lista de clientes.
+
+7. Método "mostrar_cliente": muestra en la consola una lista de los clientes registrados junto con su nombre, identificación y número de tarjeta de crédito.
+
+8. Método "vehículo_disponible": verifica si un vehículo está disponible para ser rentado en una fecha específica. Puede mostrar solo vehículos disponibles si "solo_mostar_disponibles" es "True".
+
+9. Método "mostrar_vehículos":  muestra en la consola una lista de vehículos registrados, con detalles como su identificación, tipo, fecha de mantenimiento, capacidad de pasajeros o capacidad de carga, según el tipo de vehículo. Puede mostrar solo vehículos disponibles si "solo_mostar_disponibles" es "True".
+
+10. Método "solicitar_vehículos": permite al usuario seleccionar vehículos para rentar. Muestra una lista de vehículos disponibles y permite al usuario seleccionar uno o más vehículos. Retorna una lista de identificadores de vehículos seleccionados.
+
+11. "Método registrar_renta": permite al usuario registrar una renta de vehículos. Solicita fechas de recolección y entrega, nombre del cliente, licencia de manejo y vehículos a alquilar.
+
+12. Método "mostrar_rentas": muestra en la consola una lista de las rentas registradas, con detalles como el nombre del cliente, licencia de manejo y fechas de recolección y entrega.
+    
+  
+</p>
+
+<hr>
+
+
+
 
 
 
