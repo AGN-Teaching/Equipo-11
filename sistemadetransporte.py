@@ -86,14 +86,11 @@ class SistemaDeTransporte:
         return vehiculos
 
     def registar_renta(self):
-        #falta pedir vehiculoss
             recoleccion = self.solicitar_fecha("Fecha de recoleccion de vehiculo: ")
             entrega = self.solicitar_fecha("Fecha de entrega del vehiculo: ") 
-            #agrega 1 o mas
             nombre = input("Nombre del cliente: ")
             licencia = input("Licencia de manejo: ")
             vehiculos = self.solicitar_vehiculos()
-
             renta = Renta(recoleccion, entrega, nombre, licencia, vehiculos)
             self.registro_rentas.append(renta)
         
