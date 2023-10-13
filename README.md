@@ -126,7 +126,7 @@ A continuación, se proporciona el comportamiento faltante para cada una de las 
   - menu: Método que muestra el menú principal del sistema.
 
 
-- **REGISTRO DE RENTAS**
+- **RENTA**
   
   __* ATRIBUTOS:__
   
@@ -182,7 +182,7 @@ A continuación, se proporciona el comportamiento faltante para cada una de las 
  
 # DOCUMENTACIÓN
 
-### **Registro renta:**
+### **Renta:**
 <p align="justify">
 Esta clase permite crear objetos de registro de renta, donde cada objeto almacena información como las flechas, el nombre del cliente, la licencia de manejo y una lista de vehículos relacionados con la renta. El método "guardar_datos" permite formatear la información para ser guardada.
   
