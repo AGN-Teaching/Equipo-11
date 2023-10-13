@@ -228,6 +228,49 @@ Esta clase permite crear objetos de registro de renta, donde cada objeto almacen
 
 <hr>
 
+### **Transporte:**
+<p align="justify">
+Define una jerarquía de clases para representar diferentes tipos de vehículos de transporte. La clase base "Transporte" proporciona atributos y métodos comunes, y las subclases "TransportePasajeros" y "TransporteCarga" añaden atributos y métodos específicos a sus respectivos tipos de vehículos.
+  
+   1. Importación de "Detetime": importa las clases "detatime" del módulo "detatime", que se utilizará para trabajar con fechas.
+      
+   2. Clase "Transporte": definimos la clase base "Transporte"
+
+   3. Constructor "_ _init_ _ de transporte": se inicializan tres atributos de instancia:
+
+- "identificador": almacena un identificador único para el vehículo.
+  
+- "tipo_vehiculo": representa el tipo de vehículo.
+  
+- "fecha_mantenimiento": guarda la fecha de último mantenimiento del vehículo.
+
+4. Método "verificar_disponibilidad de Transporte": verifica si el vehículo está disponible en una fecha dada. Compara la fecha proporcionada como argumento con la fecha de mantenimiento del vehículo. Si son diferentes, se considera que el vehículo está disponible.
+
+5. Método "guardar_datos de transporte": se encarga de formatear los datos del vehículo y devuelve una cadena de texto con los datos separados por comas (CSV). Esto incluye el identificador, el tipo de vehículo y la fecha de mantenimiento.
+
+6. Clase "TransportePasajeros": es una subclase de "Transporte", lo que significa que hereda las propiedades y métodos de la clase base.
+
+7. Constructor "_ _ init _ _ de Transporte Pasajeros": inicializa los atributos de la clase base utilizando super(), y luego agrega un atributo adicional:
+
+  - "número pasajeros": representa el número de pasajeros que el vehículo de pasajeros puede transportar.
+
+8. Método "guardar_datos de TransportePasajeros": llama al método "guardar_datos" de la clase base utilizando super(), y luego agrega información específica de vehículos de pasajeros, como "Pasajeros" y el número de pasajeros.
+
+9. Clase "TransporteCarga": Al igual que "TransportePasajeros", esta es una subclase de Transporte, heredando propiedades y métodos de la clase base.
+
+10. Constructor "_ _ init _ _ " de "TransporteCarga": inicializa los atributos de la clase base usando super(), y luego agrega un atributo adicional:
+
+    - "capacidad_carga": representa la capacidad de carga en vehículos de carga.
+
+11. Método "guardar_datos de TransporteCarga": llama al método "guardar_datos" de la clase base utilizando super(), y luego agrega información específica de vehículos de carga, como "Carga" y la capacidad de carga.
+    
+  
+</p>
+
+<hr>
+
+
+
 
 
 
