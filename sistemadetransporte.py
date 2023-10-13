@@ -138,7 +138,7 @@ class SistemaDeTransporte:
                     print(linea)
 
                     tipo_transporte = partes[0]
-                    identificacion = int(partes[1])
+                    identificacion = partes[1]
                     tipo_vehiculo = partes[2]
                     fecha_mantenimiento =  datetime.strptime(partes[3], "%Y/%m/%d")
 
@@ -172,21 +172,26 @@ class SistemaDeTransporte:
             
         except FileNotFoundError:
                 print("No se encontro el archivo rentas.txt")
-        self.mostrar_vehiculos(True)
-        
 
-    
-    def guardar_datos(self,datos, lista_datos):
-        with open("registro.txt", "w") as archivo_registro:
-            archivo_registro.write("Registro de Datos:\n")
-            archivo_registro.write(f"Nombre del cliente: {cliente.nombre}\n")
-            archivo_registro.write(f"Identificación del cliente: {cliente.identificacion}\n")
-            archivo_registro.write(f"Número de tarjeta de crédito: {cliente.tarjeta_credito.numero}\n")
-            archivo_registro.write(f"Fecha de vencimiento de la tarjeta: {cliente.tarjeta_credito.fecha_vencimiento.strftime('%Y/%m')}\n")
-            archivo_registro.write(f"Fecha de recolección del transporte: {transporte_pasajeros.fecha_recoleccion}\n")
-            archivo_registro.write(f"Fecha de entrega del transporte: {transporte_pasajeros.fecha_entrega}\n")
-            archivo_registro.write(f"Nombre del conductor: {conductor.nombre}\n")
-            archivo_registro.write(f"Identificación del conductor: {conductor.identificacion}\n")
+    def guardar_datos(self):
+        try :
+            with open('clientes.txt','w') as file:
+                for cliente in self.clientes:
+                    file.write(cliente.guardar_datos())
+        except FileNotFoundError:
+            print("NO GUARDO")
+        try :
+            with open('vehiculos.txt','w') as file:
+                for vehiculo in self.vehiculos:
+                    file.write(vehiculo.guardar_datos())
+        except FileNotFoundError:
+            print("NO SE PUDO GR")
+        try :
+            with open('rentas.txt','w') as file:
+                for renta in self.registro_rentas:
+                    file.write(renta.guardar_datos())
+        except FileNotFoundError:
+            print("NO SE PUDO GUARDAR")
 
     def menu(self):
         print("Menu")
