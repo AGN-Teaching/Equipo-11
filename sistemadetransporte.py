@@ -129,56 +129,65 @@ class SistemaDeTransporte:
             with open('clientes.txt','r') as file:
                 lineas =file.readlines()
                 for linea in lineas:
-                    partes = linea.split(",")
-                    print(linea)
-                    cliente = Cliente(partes[0],partes[1],partes[2])
-                    self.clientes.append(cliente)
+                    if len(linea) > 1:
+                        partes = linea.split(",")
+                        print(linea)
+                        cliente = Cliente(partes[0],partes[1],partes[2])
+                        self.clientes.append(cliente)
                     
         except FileNotFoundError:
              print("No se encontro el archivo clientes.txt") 
-        
+        finally:
+           file.close()
+
         try :
             with  open ('vehiculos.txt','r') as  file:
                 lineas =file.readlines()
                 for linea in lineas:
-                    partes = linea.split(",")
-                    print(linea)
+                    if len(linea) > 1:
+                        partes = linea.split(",")
+                        print(linea)
 
-                    tipo_transporte = partes[0]
-                    identificacion = partes[1]
-                    tipo_vehiculo = partes[2]
-                    fecha_mantenimiento =  datetime.strptime(partes[3], "%Y/%m/%d")
+                        tipo_transporte = partes[0]
+                        identificacion = partes[1]
+                        tipo_vehiculo = partes[2]
+                        fecha_mantenimiento =  datetime.strptime(partes[3], "%Y/%m/%d")
 
-                    if tipo_transporte == "Pasajeros":
-                        numero_pasajeros = int (partes[4])                        
-                        vehiculo_personas = TransportePasajeros(identificacion, tipo_vehiculo, fecha_mantenimiento,numero_pasajeros)
-                        self.vehiculos.append(vehiculo_personas)
-                    elif tipo_transporte == "Carga":
-                        capacidad_carga = float (partes[4])
-                        vehiculo_carga = TransporteCarga(identificacion, tipo_vehiculo, fecha_mantenimiento,capacidad_carga)
-                        self.vehiculos.append(vehiculo_carga)
-                    else:
-                        print("Entrada no valida")
+                        if tipo_transporte == "Pasajeros":
+                            numero_pasajeros = int (partes[4])                        
+                            vehiculo_personas = TransportePasajeros(identificacion, tipo_vehiculo, fecha_mantenimiento,numero_pasajeros)
+                            self.vehiculos.append(vehiculo_personas)
+                        elif tipo_transporte == "Carga":
+                            capacidad_carga = float (partes[4])
+                            vehiculo_carga = TransporteCarga(identificacion, tipo_vehiculo, fecha_mantenimiento,capacidad_carga)
+                            self.vehiculos.append(vehiculo_carga)
+                        else:
+                            print("Entrada no valida")
         
         except FileNotFoundError:
              print("No se encontro el archivo vehiculos.txt")
+        finally:
+            file.close()
 
         try :
             with open('rentas.txt','r') as file:
                 lineas =file.readlines()
                 for linea in lineas:
-                    partes = linea.split(",")
-                    print(linea) 
-                    fecha_colecta = datetime.strptime(partes[0], "%Y/%m/%d")
-                    fecha_entrega = datetime.strptime(partes[1], "%Y/%m/%d")
-                    cliente =partes[2]
-                    licencia =partes[3]
-                    vehiculos =partes[4].split("&")
-                    renta = RegistroRenta(fecha_colecta,fecha_entrega, cliente, licencia, vehiculos)
-                    self.registro_rentas.append(renta)
+                    if len(linea) > 1:
+                        partes = linea.split(",")
+                        print(linea) 
+                        fecha_colecta = datetime.strptime(partes[0], "%Y/%m/%d")
+                        fecha_entrega = datetime.strptime(partes[1], "%Y/%m/%d")
+                        cliente =partes[2]
+                        licencia =partes[3]
+                        vehiculos =partes[4].split("&")
+                        renta = RegistroRenta(fecha_colecta,fecha_entrega, cliente, licencia, vehiculos)
+                        self.registro_rentas.append(renta)
             
         except FileNotFoundError:
                 print("No se encontro el archivo rentas.txt")
+        finally:
+           file.close()
 
     def guardar_datos(self):
         try :
@@ -187,18 +196,26 @@ class SistemaDeTransporte:
                     file.write(cliente.guardar_datos())
         except FileNotFoundError:
             print("NO GUARDO")
+        finally:
+           file.close()
+
         try :
             with open('vehiculos.txt','w') as file:
                 for vehiculo in self.vehiculos:
                     file.write(vehiculo.guardar_datos())
         except FileNotFoundError:
             print("NO SE PUDO GR")
+        finally:
+           file.close()
+
         try :
             with open('rentas.txt','w') as file:
                 for renta in self.registro_rentas:
                     file.write(renta.guardar_datos())
         except FileNotFoundError:
             print("NO SE PUDO GUARDAR")
+        finally:
+           file.close()
 
     def menu(self):
         print("Menu")
