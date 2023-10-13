@@ -276,17 +276,17 @@ Proporciona una estructura para crear y gestionar un menú interactivo en un pro
   
    1. Método "mostrar_menú": se utiliza para mostrar el menú en la consola. Recibe un diccionario de opciones como argumento, donde las claves son las selecciones posibles del menú y los valores son listas con dos elementos. El primer elemento de cada lista es la descripción de la opción, y el segundo elemento es una función que se ejecutará si se selecciona esa opción.
 
-      - Itera a través de las claves del diccionario (opciones) ordenadas alfabéticamente utilizando "sorted(opciones)".
+ - Itera a través de las claves del diccionario (opciones) ordenadas alfabéticamente utilizando "sorted(opciones)".
      
-      - Muestra cada opción con su descripción utilizando "print(f' {clave}) {opciones[clave][0]}')".
+ - Muestra cada opción con su descripción utilizando "print(f' {clave}) {opciones[clave][0]}')".
       
    2. Método "leer_opción": se utiliza para leer la opción seleccionada por el usuario. Recibe el mismo diccionario de opciones como argumento.
 
-      - Muestra el mensaje "Opción: " y espera a que el usuario ingrese una opción.
+- Muestra el mensaje "Opción: " y espera a que el usuario ingrese una opción.
      
-      - Utiliza una expresión walrus (:=) para asignar lo que el usuario ingresó a la variable "opción" y al mismo tiempo verifica si esa opción está en el diccionario de opciones (opción not in opciones).
+- Utiliza una expresión walrus (:=) para asignar lo que el usuario ingresó a la variable "opción" y al mismo tiempo verifica si esa opción está en el diccionario de opciones (opción not in opciones).
      
-      - Si la opción no está en el diccionario, muestra el mensaje "Opción incorrecta, vuelva a intentarlo." y continúa esperando a que el usuario ingrese una opción válida.
+- Si la opción no está en el diccionario, muestra el mensaje "Opción incorrecta, vuelva a intentarlo." y continúa esperando a que el usuario ingrese una opción válida.
      
       - Una vez que el usuario ingresa una opción válida, devuelve esa opción.
 
@@ -306,13 +306,13 @@ Proporciona una estructura para crear y gestionar un menú interactivo en un pro
   
    - En cada iteración del bucle:
      
-     - Llama al método "mostrar_menu" para mostrar el menú.
+   - Llama al método "mostrar_menu" para mostrar el menú.
     
-     - Llama al método "leer_opcion" para que el usuario ingrese una opción válida.
+   - Llama al método "leer_opcion" para que el usuario ingrese una opción válida.
     
-     - Llama al método "ejecutar_opcion" para ejecutar la función asociada a la opción seleccionada.
+   - Llama al método "ejecutar_opcion" para ejecutar la función asociada a la opción seleccionada.
     
-     - Muestra una línea en blanco (print()) para separar las iteraciones del menú.
+   - Muestra una línea en blanco (print()) para separar las iteraciones del menú.
     
   
 </p>
