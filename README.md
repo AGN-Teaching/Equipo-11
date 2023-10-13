@@ -88,25 +88,33 @@ Por último, la "Clase Main" se considera la parte principal del programa, ya qu
 
 A continuación, se proporciona el comportamiento faltante para cada una de las clases mencionadas en el proyecto de "Renta de Transporte":
 
-- **Transporte**
-  __* ATRIBUTOS:__ 
+
+- **TRANSPORTE**
+  
+  __* ATRIBUTOS:__
+  
   - Identificador: número entero que identifica el vehículo.
   - Tipo: cadena de texto que indica si el vehículo es de pasajeros o de carga.
   - Fecha de mantenimiento: fecha en la que se programó el mantenimiento del vehículo.
   
   __* COMPORTAMIENTO:__
+  
   - verificar_disponibilidad(fecha): Método que verifica si el vehículo estará disponible en la fecha proporcionada.
   - _str_: Método que devuelve una representación en cadena del objeto.
   - guardar_datos: Método para guardar los datos del vehículo.
 
-- **Sistema de Transporte**
+
+- **SISTEMA DE TRANSPORTE**
+ 
   __* ATRIBUTOS:__
+  
   - vehículos: lista que almacena los objetos de vehículos, ya sean de pasajeros o de carga.
   - clientes: lista que almacena los objetos de cliente.
   - registro_rentas: lista que almacena los objetos de renta.
   - fecha_actual: variable que almacena la fecha actual.
 
   __* COMPORTAMIENTO:__
+  
   - registro_cliente(nombre, identificacion, tarjeta): Método para registrar un nuevo cliente.
   - mostrar_vehiculos: Método que muestra una lista de los vehículos disponibles.
   - registar_renta: Método para registrar una nueva renta, solicitando datos al usuario.
@@ -117,8 +125,11 @@ A continuación, se proporciona el comportamiento faltante para cada una de las 
   - cambiar_fecha_actual: Método para cambiar la fecha actual del sistema.
   - menu: Método que muestra el menú principal del sistema.
 
-- **Registro de Rentas**
-  __* ATRIBUTOS:__ 
+
+- **REGISTRO DE RENTAS**
+  
+  __* ATRIBUTOS:__
+  
   - vehículos: lista que almacena los vehículos que están relacionados con la renta.
   - fecha_inicio: variable que almacena la fecha de inicio de la renta.
   - fecha_fin: variable que almacena la fecha de finalización de la renta.
@@ -126,34 +137,50 @@ A continuación, se proporciona el comportamiento faltante para cada una de las 
   - licencia_manejo: número entero que almacena el número de licencia de manejo del cliente.
 
   __* COMPORTAMIENTO:__
+  
   - Métodos relacionados con la obtención y representación de los datos de una renta.
 
-- **Menú**
-  __* ATRIBUTOS:__ 
+
+- **MENÚ**
+  
+  __* ATRIBUTOS:__
+  
   No tiene atributos propios, se compone de métodos que facilitan la creación y gestión de menús en un programa, pero no define ningún atributo para almacenar información.
 
   __* COMPORTAMIENTO:__
+  
   - mostrar_menu(opciones): Método que muestra las opciones disponibles en el menú.
   - leer_opcion(opciones): Método que lee la elección del usuario.
   - ejecutar_opcion(opcion, opciones): Método que ejecuta la opción seleccionada.
   - generar_menu(opciones, opcion_salida): Método que genera y maneja el menú principal del sistema.
 
-- **Cliente**
+
+- **CLIENTE**
+  
  __* ATRIBUTOS:__
+ 
   - Nombre: cadena de texto que almacena el nombre del cliente.
   - Identificador: almacena la identificación del cliente.
   - Tarjeta crédito: cadena de texto que almacena el número de tarjeta del cliente.
   - Fecha de caducidad: fecha de vencimiento de la tarjeta junto con el código de seguridad.
 
   __* COMPORTAMIENTO:__
+  
   - Métodos relacionados con la representación y manipulación de datos del cliente.
 
-- **Main**
+
+- **MAIN**
+  
   __* ATRIBUTOS:__
+  
   No tiene una clase definida, por lo que no existen atributos de una clase en particular.
 
   __* COMPORTAMIENTO:__
+  
   - La función "main" es el punto de entrada principal del programa. Inicializa una instancia del sistema de transporte y llama al método "menú" para ejecutar el sistema y sus funcionalidades.
+    
+ 
+# DOCUMENTACIÓN
 
 
 
