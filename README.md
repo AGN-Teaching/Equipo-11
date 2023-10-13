@@ -381,7 +381,20 @@ Se utiliza para gestionar un sistema de registro y renta de  vehículos, interac
 <hr>
 
 
+# Concluciones:
 
+-NAVA MARTINEZ DANIELA: 
+
+
+
+
+
+-OLGUIN RICO ANAID:
+
+
+
+
+- RAMIREZ AGUILERA JESUS EMMANUEL:
 
 
 
