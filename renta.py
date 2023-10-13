@@ -1,5 +1,5 @@
 from datetime import datetime
-class RegistroRenta:
+class Renta:
     def __init__(self, fecha_inicio,fecha_fin,nombre_cliente:str,licencia_manejo:int, vehiculos):
         self.vehiculos = vehiculos
         self.fecha_inicio = fecha_inicio

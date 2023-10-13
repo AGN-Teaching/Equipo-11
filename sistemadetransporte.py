@@ -1,6 +1,6 @@
 from datetime import datetime
 from cliente import Cliente
-from registrorentas import RegistroRenta
+from renta import Renta
 from transporte import Transporte, TransporteCarga, TransportePasajeros
 from menu import Menu
 
@@ -94,7 +94,7 @@ class SistemaDeTransporte:
             licencia = input("Licencia de manejo: ")
             vehiculos = self.solicitar_vehiculos()
 
-            renta = RegistroRenta(recoleccion, entrega, nombre, licencia, vehiculos)
+            renta = Renta(recoleccion, entrega, nombre, licencia, vehiculos)
             self.registro_rentas.append(renta)
         
     def mostrar_rentas(self):
@@ -181,7 +181,7 @@ class SistemaDeTransporte:
                         cliente =partes[2]
                         licencia =partes[3]
                         vehiculos =partes[4].split("&")
-                        renta = RegistroRenta(fecha_colecta,fecha_entrega, cliente, licencia, vehiculos)
+                        renta = Renta(fecha_colecta,fecha_entrega, cliente, licencia, vehiculos)
                         self.registro_rentas.append(renta)
             
         except FileNotFoundError:
