@@ -319,6 +319,56 @@ Proporciona una estructura para crear y gestionar un menú interactivo en un pro
 
 <hr>
 
+### **:**
+<p align="justify">
+Proporciona una estructura para crear y gestionar un menú interactivo en un programa, permitiendo al usuario seleccionar didefrentes ocpciones y ejecutar acciones asociadas con esas opciones.
+  
+1. Método "mostrar_menú": se utiliza para mostrar el menú en la consola. Recibe un diccionario de opciones como argumento, donde las claves son las selecciones posibles del menú y los valores son listas con dos elementos. El primer elemento de cada lista es la descripción de la opción, y el segundo elemento es una función que se ejecutará si se selecciona esa opción.
+
+ - Itera a través de las claves del diccionario (opciones) ordenadas alfabéticamente utilizando "sorted(opciones)".
+     
+ - Muestra cada opción con su descripción utilizando "print(f' {clave}) {opciones[clave][0]}')".
+      
+2. Método "leer_opción": se utiliza para leer la opción seleccionada por el usuario. Recibe el mismo diccionario de opciones como argumento.
+
+- Muestra el mensaje "Opción: " y espera a que el usuario ingrese una opción.
+     
+- Utiliza una expresión walrus (:=) para asignar lo que el usuario ingresó a la variable "opción" y al mismo tiempo verifica si esa opción está en el diccionario de opciones (opción not in opciones).
+     
+- Si la opción no está en el diccionario, muestra el mensaje "Opción incorrecta, vuelva a intentarlo." y continúa esperando a que el usuario ingrese una opción válida.
+     
+- Una vez que el usuario ingresa una opción válida, devuelve esa opción.
+
+3. Método "ejecutar_opción":  se utiliza para ejecutar la función asociada a la opción seleccionada. Recibe la opción seleccionada y el diccionario de opciones como argumentos.
+
+- "identificador": almacena un identificador único para el vehículo.
+  
+- "tipo_vehiculo": representa el tipo de vehículo.
+  
+- "fecha_mantenimiento": guarda la fecha de último mantenimiento del vehículo.
+
+4. Método "generar_menú": se utiliza para generar y gestionar el menú completo, incluyendo la lectura de opciones, ejecución de acciones y repetición del proceso hasta que el usuario elija una opción de salida. Recibe el diccionario de opciones y una opción de salida como argumentos.
+
+   - Inicializa la variable "opcion" como "None".
+  
+   - Entra en un bucle while que se ejecutará hasta que la opción seleccionada sea igual a la opción de salida.
+  
+   - En cada iteración del bucle:
+     
+   - Llama al método "mostrar_menu" para mostrar el menú.
+    
+   - Llama al método "leer_opcion" para que el usuario ingrese una opción válida.
+    
+   - Llama al método "ejecutar_opcion" para ejecutar la función asociada a la opción seleccionada.
+    
+   - Muestra una línea en blanco (print()) para separar las iteraciones del menú.
+    
+  
+</p>
+
+<hr>
+
+
 
 
 
