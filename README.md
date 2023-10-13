@@ -202,15 +202,15 @@ Esta clase permite crear objetos de registro de renta, donde cada objeto almacen
 
 *Estos parámetros se utilizan para inicializar atributos de la instancia clase:*
 
-    - "self.vehiculos" almacena la lista de vehículos.
+- "self.vehiculos" almacena la lista de vehículos.
   
-    - "self.fecha_inicio" guarda la fecha de inicio.
+- "self.fecha_inicio" guarda la fecha de inicio.
   
-    - "self.fecha_fin" guarda la fecha de finalización.
+- "self.fecha_fin" guarda la fecha de finalización.
+  
+- "self.nombre_cliente" guarda el nombre del cliente.
 
-    - "self.nombre_cliente" guarda el nombre del cliente.
-
-    - "self.licencia_manejo" almacena el número de licencia de manejo.
+- "self.licencia_manejo" almacena el número de licencia de manejo.
 
 3. Método "guardar_datos":
 
