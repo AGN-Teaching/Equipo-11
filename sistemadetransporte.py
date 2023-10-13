@@ -44,7 +44,15 @@ class SistemaDeTransporte:
         if solo_mostar_disponibles == False:
             return True
 
-        return self.fecha_actual != vehiculo.fecha_mantenimiento
+        disponible = True
+        for renta in self.registro_rentas:
+            if vehiculo.identificador in renta.vehiculos:
+                if self.fecha_actual >= renta.fecha_inicio and self.fecha_actual <= renta.fecha_fin:
+                    disponible = False
+
+
+
+        return vehiculo.verificar_disponibilidad(self.fecha_actual) and disponible
 
     def mostrar_vehiculos(self, solo_mostar_disponibles = False):
         print ("Lista de vehiculos")
@@ -66,7 +74,6 @@ class SistemaDeTransporte:
                 print (f"Fecha de mantenimiento: {self.fecha_to_str(vehiculo.fecha_mantenimiento)}")
                 print(f"Capacidad de carga: {vehiculo.capacidad_carga} kg")
 
- 
     def solicitar_vehiculos(self):
         vehiculos = []
         print("Elije los identificadores de vehiculos a rentar uno por uno")
@@ -123,7 +130,7 @@ class SistemaDeTransporte:
                 lineas =file.readlines()
                 for linea in lineas:
                     partes = linea.split(",")
-                    #print(linea)
+                    print(linea)
                     cliente = Cliente(partes[0],partes[1],partes[2])
                     self.clientes.append(cliente)
                     
