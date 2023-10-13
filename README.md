@@ -178,6 +178,9 @@ A continuación, se proporciona el comportamiento faltante para cada una de las 
   __* COMPORTAMIENTO:__
   
   - La función "main" es el punto de entrada principal del programa. Inicializa una instancia del sistema de transporte y llama al método "menú" para ejecutar el sistema y sus funcionalidades.
+    
+ 
+# DOCUMENTACIÓN
 
 
 
