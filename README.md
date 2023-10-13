@@ -193,6 +193,36 @@ Esta clase permite crear objetos de registro de renta, donde cada objeto almacen
    - "fecha_inicio": representa la fecha de inicio de la renta.
      
    - "fecha_fin": representa la fecha de finalización de la renta.
+
+   - "nombre_cliente": almacena el nombre del cliente asociado a la renta.
+
+   - "licencia_manejo": guarda el número de licencia de manejo del cliente.
+
+   - "vehículos": recibe una lista de vehículos relacionados con la renta.
+
+*Estos parámetros se utilizan para inicializar atributos de la instancia clase:*
+
+- "self.vehiculos" almacena la lista de vehículos.
+  
+- "self.fecha_inicio" guarda la fecha de inicio.
+  
+- "self.fecha_fin" guarda la fecha de finalización.
+
+- "self.nombre_cliente" guarda el nombre del cliente.
+
+- "self.licencia_manejo" almacena el número de licencia de manejo.
+
+3. Método "guardar_datos":
+
+- Formatea y devuelve una cadena de texto que representa los datos de la renta en un formato específico.
+
+- La función "datetime.strftime" para formatear las fechas de inicio y fin con el formato "YYYY/MM/DD".
+
+- Concatena los valores formateados junto con otros datos "nombre_cliente" y "licencia_manejo".
+
+- Utiliza "join" para unir elementos de la lista de vehículos en una cadena, separados por "&"
+
+- Finalmente, el método "guardar_datos" devuelve la cadena formateada conmo resultado.
   
 </p>
 
