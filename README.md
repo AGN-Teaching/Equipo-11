@@ -270,7 +270,7 @@ Define una jerarquía de clases para representar diferentes tipos de vehículos 
 <hr>
 
 
-### **MENÚ:**
+### **Menú:**
 <p align="justify">
 Proporciona una estructura para crear y gestionar un menú interactivo en un programa, permitiendo al usuario seleccionar didefrentes ocpciones y ejecutar acciones asociadas con esas opciones.
   
@@ -319,7 +319,7 @@ Proporciona una estructura para crear y gestionar un menú interactivo en un pro
 
 <hr>
 
-### **CLIENTE:**
+### **Cliente:**
 <p align="justify">
 Permite crear instancias de clientes con sus atributos iniciales y proporciona un método para obtener una representación de los datos del cliente en un formato específico.
   
