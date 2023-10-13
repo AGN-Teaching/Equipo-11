@@ -8,4 +8,4 @@ class RegistroRenta:
         self.licencia_manejo =licencia_manejo
 
     def guardar_datos(self):
-        return datetime.strftime(self.fecha_inicio, "%Y/%m/%d")+","+datetime.strftime(self.fecha_fin, "%Y/%m/%d")+","+self.nombre_cliente+","+self.licencia_manejo+","+"&".join(self.vehiculos)+"\n"
+        return datetime.strftime(self.fecha_inicio, "%Y/%m/%d")+","+datetime.strftime(self.fecha_fin, "%Y/%m/%d")+","+self.nombre_cliente+","+self.licencia_manejo+","+"&".join(self.vehiculos)

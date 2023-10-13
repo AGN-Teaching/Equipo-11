@@ -7,4 +7,4 @@ class Cliente:
         #self.cvv = cvv
 
     def guardar_datos(self):
-        return self.nombre+","+self.identificacion+","+self.tarjeta_credito+"\n"
+        return self.nombre+","+self.identificacion+","+self.tarjeta_credito

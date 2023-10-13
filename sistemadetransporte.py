@@ -192,8 +192,10 @@ class SistemaDeTransporte:
     def guardar_datos(self):
         try :
             with open('clientes.txt','w') as file:
+                lineas = []
                 for cliente in self.clientes:
-                    file.write(cliente.guardar_datos())
+                    lineas.append(cliente.guardar_datos())
+                file.writelines(lineas)
         except FileNotFoundError:
             print("NO GUARDO")
         finally:
@@ -201,8 +203,11 @@ class SistemaDeTransporte:
 
         try :
             with open('vehiculos.txt','w') as file:
+                lineas = []
                 for vehiculo in self.vehiculos:
-                    file.write(vehiculo.guardar_datos())
+                    lineas.append(vehiculo.guardar_datos())
+                print(lineas)
+                file.writelines(lineas)
         except FileNotFoundError:
             print("NO SE PUDO GR")
         finally:
@@ -210,8 +215,10 @@ class SistemaDeTransporte:
 
         try :
             with open('rentas.txt','w') as file:
+                lineas = []
                 for renta in self.registro_rentas:
-                    file.write(renta.guardar_datos())
+                    lineas.append(renta.guardar_datos())
+                file.writelines(lineas)
         except FileNotFoundError:
             print("NO SE PUDO GUARDAR")
         finally:
