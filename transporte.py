@@ -6,7 +6,7 @@ class Transporte:
         self.fecha_mantenimiento = fecha_mantenimiento
 
     def verificar_disponibilidad(self, fecha):
-        return self.fecha != self.fecha_mantenimiento
+        return fecha != self.fecha_mantenimiento
 
     def guardar_datos(self):
         return self.identificador+","+self.tipo_vehiculo+","+datetime.strftime(self.fecha_mantenimiento, "%Y/%m/%d")
