@@ -24,6 +24,6 @@ class TransporteCarga(Transporte):
     def __init__(self, identificador,tipo_vehiculo, fecha_mantenimiento, capacidad_carga):
        super().__init__(identificador,tipo_vehiculo,fecha_mantenimiento)
        self.capacidad_carga =  capacidad_carga
-
+#
     def guardar_datos(self):
         return "Carga,"+super().guardar_datos()+","+str(self.capacidad_carga)+"\n"
