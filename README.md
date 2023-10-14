@@ -32,7 +32,7 @@ El proyecto final del curso "Programación Orientada a Objetos" se concentra en 
 </p>
 
 <p align="justify">
-El propósito principal de este proyecto es desarrollar un servicio de transporte que ofrece dos modalidades: transporte de pasajeros y transporte de carga, cada una con sus particularidades. Ambas modalidades requieren la recopilación de información sobre las personas que conducirán, como nombres y licencias de manejo. Además, al inicio del proceso, se espera que un cliente registre ciertos datos, y en el caso de los vehículos, se debe verificar su disponibilidad.
+El propósito principal de este proyecto es desarrollar un servicio de transporte que ofrece dos modalidades: transporte de pasajeros y transporte de carga,cada una con sus particularidades. Ambas modalidades requieren la recopilación de información sobre las personas que conducirán, como nombres y licencias de manejo. Además, al inicio del proceso, se espera que un cliente registre ciertos datos, y en el caso de los vehículos, se debe verificar su disponibilidad.
 </p>
 
 <p align="justify">
@@ -59,15 +59,15 @@ Es importante tener en cuenta que, en determinadas ocasiones, algunos vehículos
 
 # ANÁLISIS DEL PROBLEMA
 <p align="justify">
-En la creación de nuestro proyecto, empleamos el lenguaje de programación Python para desarrollar un sistema de "Renta de Transporte". Este sistema se basa en varias clases, incluyendo Transporte, Sistema de Transporte, Registro de Rentas, Menú, Cliente y Main. Cada una de estas clases ha sido diseñada con atributos específicos y funciones bien definidas para cumplir con su respectiva funcionalidad.
+En la creación de nuestro proyecto, empleamos el lenguaje de programación Python para desarrollar un sistema de "Renta de Transporte". Este sistema se basa en varias clases, incluyendo Transporte, Sistema de Transporte, Rentas, Menú, Cliente y Main. Cada una de estas clases ha sido diseñada con atributos específicos y funciones bien definidas para cumplir con su respectiva funcionalidad.
 </p>
 
 <p align="justify">
-La clase "Transporte" es fundamental para determinar si un vehículo se encuentra en mantenimiento o está disponible. Además, dentro de esta clase, distinguimos dos tipos de transportes: los de pasajeros y los de carga. Esto nos permite conocer la capacidad de personas o peso, según corresponda.
+La clase "Transporte" es fundamental para determinar si un vehículo se encuentra en mantenimiento o está disponible.Dentro de esta clase se encuentran los atributos de nuestros transportes, un identificador para facilitar la busqueda y solicitud de los vehiculos, asi como el tipo de vehiculo a rentar  y las fechas de mantenimiento en donde no se encontraran disponibles.Además, dentro de esta clase, distinguimos dos tipos de transportes: los de pasajeros y los de carga. Esto nos permite conocer la capacidad de personas o peso, según corresponda.
 </p>
 
 <p align="justify">
-La clase "Sistema de Transporte" desempeña un papel crucial al recopilar todos los datos necesarios para el proyecto. Esto incluye la solicitud de fechas de recolección y entrega, la cantidad de pasajeros, así como los datos del cliente y los detalles de la tarjeta de crédito, entre otros.
+La clase "Sistema de Transporte" desempeña un papel crucial al recopilar todos los datos necesarios para el proyecto. Esto incluye la solicitud de fechas de recolección y entrega, la cantidad de pasajeros, así como los datos del cliente y los detalles de la tarjeta de crédito, esta clase tambien nos permite de manera manual ingresar datos de vehiculos, asi como subirlos directamente de un archivo de texto y guardarlos para su posterior uso. 
 </p>
 
 <p align="justify">
