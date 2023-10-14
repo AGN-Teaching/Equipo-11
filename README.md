@@ -87,7 +87,7 @@ Por último, la "Clase Main" se considera la parte principal del programa, ya qu
 </p>
 
 A continuación, se proporciona el comportamiento faltante para cada una de las clases mencionadas en el proyecto de "Renta de Transporte":
-
+</p>
 
 - **TRANSPORTE**
   
@@ -179,7 +179,21 @@ A continuación, se proporciona el comportamiento faltante para cada una de las 
   
   - La función "main" es el punto de entrada principal del programa. Inicializa una instancia del sistema de transporte y llama al método "menú" para ejecutar el sistema y sus funcionalidades.
     
- 
+
+# DIAGRAMA UML
+
+<p align="justify">
+El diagrama UML proporcionan una representación visual de las clases, objetos, relaciones y estructuras del sistema, lo que facilita la comprensión y la comunicación entre los desarrolladores y otras partes interesadas.
+</p>
+
+![uml_transporte](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/d1cd5347-59ce-4e81-bfaf-dac6c5e3ddae)
+
+
+
+
+
+
+
 # DOCUMENTACIÓN
 
 ### **Renta:**
