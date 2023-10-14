@@ -10,7 +10,7 @@ class SistemaDeTransporte:
         self.clientes = []
         self.registro_rentas = []
         self.fecha_actual = datetime(datetime.now().year, datetime.now().month,datetime.now().day)
-    #
+    
     @staticmethod
     def solicitar_fecha(prompt):
             while True:
