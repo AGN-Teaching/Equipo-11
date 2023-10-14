@@ -374,6 +374,14 @@ Se utiliza para gestionar un sistema de registro y renta de  vehículos, interac
 11. "Método registrar_renta": permite al usuario registrar una renta de vehículos. Solicita fechas de recolección y entrega, nombre del cliente, licencia de manejo y vehículos a alquilar.
 
 12. Método "mostrar_rentas": muestra en la consola una lista de las rentas registradas, con detalles como el nombre del cliente, licencia de manejo y fechas de recolección y entrega.
+
+13. Método "registrar_vehículo": permite al usuario registrar un nuevo vehículo. Solicita el identificador, tipo, fecha de mantenimiento y tipo de vehículo (pasajero o carga), y agrega el vehículo a la lista de vehículos.
+
+14. Método "cargar_datos": carga datos previamente guardados desde archivos. Lee información de clientes, vehículos y rentas desde archivos de texto y almacena estos datos en las listas correspondientes.
+
+15. Método "guardar_datos": guarda los datos de clientes, vehículos y rentas en archivos de texto para su posterior recuperación.
+
+16. Método "menú": muestra un menú de opciones y permite al usuario interactuar con el programa. Incluye registrar clientes, mostrar clientes, mostrar vehículos, registrar rentas, mostrar rentas, registrar vehículos, guardar datos, cargar datos y salir.
     
   
 </p>
