@@ -193,13 +193,36 @@ El diagrama UML proporcionan una representación visual de las clases, objetos, 
 ![cliente](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/4ca38152-a813-4b4c-94e5-3d27f32b944d)
 
 <p align="justify">
-Permite crear instancias de clientes con sus atributos iniciales y proporciona un método para obtener una representación de los datos del cliente en un formato específico.
-  
-  
+- La clase se llama "cliente".
+
+- Tiene tres atributos: "nombre", "identificación" y "tarjeta" todos de tipo string.
+
+- Cuenta con un constructor (_ _ init _ _) que toma tres parámetros: "nombre", "identificación" y "tarjeta" y les asigna atributos correspondientes.
+
+- Tiene un método llamado "guardar_datos" no toma argumentos y devuelve una cadena (str). Retorna una representación en forma de cadena de los atributos del cliente.
+    
 </p>
 
 <hr>
 
+
+### **Diagrama UML "Renta":**
+
+![renta](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/c1681b2d-ed7d-49da-8316-d1197d3ac9ae)
+
+
+<p align="justify">
+- La clase se llama "cliente".
+
+- Tiene tres atributos: "nombre", "identificación" y "tarjeta" todos de tipo string.
+
+- Cuenta con un constructor (_ _ init _ _) que toma tres parámetros: "nombre", "identificación" y "tarjeta" y les asigna atributos correspondientes.
+
+- Tiene un método llamado "guardar_datos" no toma argumentos y devuelve una cadena (str). Retorna una representación en forma de cadena de los atributos del cliente.
+    
+</p>
+
+<hr>
 
 
 
