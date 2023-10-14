@@ -388,6 +388,30 @@ Se utiliza para gestionar un sistema de registro y renta de  vehículos, interac
 
 <hr>
 
+### *Menú:*
+<p align="justify">
+Proporciona una forma sencilla de crear menús interactivos en programas de consola. Nos permite definir opciones con funciones asociadas, muestra el menú al usuario, este lee y valida las selecciones del usuario y ejecuta las funciones correspondientes a las opciones seleccionadas.
+
+1. Definición de clase "Menú": se define la clase "Menú", que encapsula la funcionalidad relacionada con la creación y gestión de menús interactivos.
+
+2. Método "mostrar_menú": muestra un menú en la consola. Recibe un diccionario de "opciones", donde la clave son los números o letras de opción y los valores son tuplas que contienen el texto descriptivo de la opción y una función que se ejecutará cuando se seleccione esa opción. Recorre las claves ordenadas con "sorted" y muestra cada opción con su descripción.
+
+3. Método "leer_opcion": permite al usuario ingresar una opción al menú. Toma como argumento el diccionario de "opciones" y entra en un bucle hasta que se ingrese una opción válida. Si la opción ingresada no se encuentra en el diccionario, muestra un mensaje de error y solicita nuevamente la opción. Finalmente, devuelve la opción seleccionada.
+
+4. Método "ejecutar_opcion": se encarga de ejecutar la función asociada a la opción seleccionada por el usuario. Recibe como argumentos la "opcion" seleccionada y el diccionario de "opciones". Accede al valor de la opción y ejecuta la función que está en la segunda posición de la tupla utilizando "opciones[opcion][1]()".
+
+5. Método "generar_menú" genera un menú interactivo completo. Recibe el diccionario de "opciones" y la "salida" que indica cuando termina. El método entra en un bucle que se ejecuta hasta que la "opción" sea igual a:
+
+- "opción_salida": en cada iteración, muestra el menú con 
+
+- "self.mostrar_menu(opciones)": lee la opción del usuario con 
+
+- "self.leer_opcion(opcion, opciones): repite el ciclo. Cuando se selecciona la "opcion_salida", el bucle termina y el menú se cierra.
+
+</p>
+
+<hr>
+
 
 # Concluciones:
 
