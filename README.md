@@ -193,6 +193,7 @@ El diagrama UML proporcionan una representación visual de las clases, objetos, 
 ![cliente](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/4ca38152-a813-4b4c-94e5-3d27f32b944d)
 
 <p align="justify">
+  
 - La clase se llama "cliente".
 
 - Tiene tres atributos: "nombre", "identificación" y "tarjeta" todos de tipo string.
@@ -212,18 +213,77 @@ El diagrama UML proporcionan una representación visual de las clases, objetos, 
 
 
 <p align="justify">
-- La clase se llama "cliente".
+  
+- La clase se llama "renta".
 
-- Tiene tres atributos: "nombre", "identificación" y "tarjeta" todos de tipo string.
+- Tiene cinco atributos: "fecha_inicio", "fecha_fin", "nombre_cliente", "licencia manejo" y "vehículos".
 
-- Cuenta con un constructor (_ _ init _ _) que toma tres parámetros: "nombre", "identificación" y "tarjeta" y les asigna atributos correspondientes.
+- Cuenta con un constructor (_ _ init _ _) que toma cinco parámetros y asigna esos valores a los atributos correspondientes.
 
-- Tiene un método llamado "guardar_datos" no toma argumentos y devuelve una cadena (str). Retorna una representación en forma de cadena de los atributos del cliente.
+- Tiene un método llamado "guardar_datos" no toma argumentos y devuelve una cadena (str).
     
 </p>
 
 <hr>
 
+
+### **Diagrama UML "transporte":**
+
+![transporte](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/3aa097c2-d140-4fa2-a236-7555f0a1e5c8)
+
+
+
+<p align="justify">
+  
+- La clase "transporte" tiene tres atributos: "identificador", "tipo vehículo" y "fecha_mantenimiento". Tamnién tiene dos métodos "verificar_disponibilidad(fecha)" y "guardar_datos()".
+
+- La clase "TransportePasajeros" hereda de "Transporte" e introduce un nuevo atributo, "numero_pasajeros" de tipo "int". Anula el método "guardar_datos() para incluir información adicional específica de pasajeros.
+
+- La clase "TransporteCarga" hereda de "Transporte" e introduce un nuevo atributo, "capacidad_carga". Anula el método "guardar_datos() para incluir información adicional específica de carga. 
+    
+</p>
+
+<hr>
+
+### **Diagrama UML "sistema transporte":**
+
+![sistematransporte](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/a73bb981-5299-41ff-8ef2-8f7a781fc2ae)
+
+
+<p align="justify">
+  
+- La clase "SistemaDeTransporte" tiene varios atributos, incluyendo la lista para almacenar "vehículos", "clientes", "registro_renta", así como la "fecha_actual". Tiene varios métodos, como registro_ciente(), mostrar_clientes(), vehiculo_disponible(), mostrar_vehiculos(), solicitar_vehiculos(), registrar_renta(), mostrar_rentas(), registrar_vehiculo(), cargar_datos(), guardar_datos(), y menu(). 
+
+- La clase "Menú" no se muestra explícitamente en el diagrama, pero se utiliza para mostrar un menú de opciones y ejecutar acciones en función de la elección del usuario.
+
+- Las clases "Cliente", "Renta", "TransporteCarga", y "TransportePasajeros" son utilizadas en el código, pero no están incluidas en el diagrama. Estas clases contienen atributos y métodos relacionados con sus respectivas entidades.
+    
+</p>
+
+<hr>
+
+
+### **Diagrama UML "menú":**
+
+![menu](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/c8463864-9767-4da2-87fc-bafeb419dbeb)
+
+
+
+<p align="justify">
+  
+- La clase "Menu" contiene cuatro métodos: 
+
+  - "mostrar_menu(opciones): Muestra un menú de opciones en la consola. Toma un diccionario de opciones como entrada y muestra cada opción numerada con su descripción.
+ 
+  - "leer_opcion(opciones): Permite al usuario seleccionar una opción ingresando un número. Verifica si la opción ingresada está en el diccionario de opciones y continúa solicitando una opción válida hasta que se ingrese una opción válida.
+ 
+  - ejecutar_opcion(opcion_opciones): Ejecuta la acción asociada con la opción seleccionada. Toma la opción seleccionada como entrada y busca la acción correspondiente en el diccionario de opciones para ejecutarla.
+ 
+  - generar_menu(opciones, opcion_salida): Genera un bucle que muestra el menú, lee la opción del usuario, ejecuta la acción correspondiente y repite hasta que se ingrese la "opción de salida" (generalmente usada para salir del menú).
+    
+</p>
+
+<hr>
 
 
 
