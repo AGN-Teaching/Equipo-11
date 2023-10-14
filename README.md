@@ -390,6 +390,12 @@ Se utiliza para gestionar un sistema de registro y renta de  vehículos, interac
 
 
 -OLGUIN RICO ANAID:
++ La programacionn orientada a objetos nos proporciona una forma estructurada y modular para resolver nuestros problemas.
++ Facilita la creacion y el mantenimiento del codigo.
++ La herencia y polimorfismo nos ayudan a reutilizar codigo al heredar atributos y metodos de una clase padre a una o varias clases hijas, asi estas aprovechan la funcionalidad de la clase padre.
++ A traves del desarrollo del programa se pueden encontrar mejoras para el funcionamiento del sistema y gracias al diseño modular estas mejoras pueden añadirse apoyandose del codigo existente, y hacer pruebas sin afectar el mismo. 
++ El diseño de un programa orientado a objetos requiere una buena comprension del problema a desarrollar, ya que puede tener ambiguedades debido al lenguaje que usemos al definir nuestros objetos.
+
 
 
 
