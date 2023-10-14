@@ -286,6 +286,24 @@ El diagrama UML proporcionan una representación visual de las clases, objetos, 
 <hr>
 
 
+# RELACIONES ENTRE CLASES
+
+<p align="justify">
+Se refieren a cómo las clases interactúan y se relacionan entre sí dentro de un sistema de software. Estas relaciones son fundamentales para modelar y construir sistemas complejos. Las relaciones entre clases pueden ser de varios tipos, incluyendo:
+
+- Generalización/Especialización (herencia): Representa una relación jerárquica entre una clase base (superclase) y una clase derivada (subclase). La subclase hereda atributos y métodos de la superclase y puede extender o sobrescribir sus comportamientos.
+
+- Asociación: Representa una relación estructural entre dos clases, donde una clase utiliza o referencia a la otra. Puede ser una asociación simple o una asociación más fuerte como la agregación o la composición.
+
+- Agregación: Representa una relación de "todo a parte" donde una clase contiene o se compone de otras clases. Las partes pueden existir por sí mismas y se pueden compartir entre varias instancias de la clase contenedora.
+
+- Composición: Es una forma más fuerte de agregación donde las partes están fuertemente ligadas a la clase contenedora. En una composición, las partes no pueden existir sin la clase contenedora.
+</p>
+
+![relacion](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/301a3a32-3c3c-4ac5-aef8-56e1490fca83)
+
+
+
 
 # DOCUMENTACIÓN
 
@@ -515,7 +533,7 @@ Dentro de este bloque, se llama a la función "main()", que inicia la ejecución
 <hr>
 
 
-# Concluciones:
+# CONCLUSIONES:
 
 -NAVA MARTINEZ DANIELA: 
 
