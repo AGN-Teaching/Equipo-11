@@ -374,8 +374,40 @@ Se utiliza para gestionar un sistema de registro y renta de  vehículos, interac
 11. "Método registrar_renta": permite al usuario registrar una renta de vehículos. Solicita fechas de recolección y entrega, nombre del cliente, licencia de manejo y vehículos a alquilar.
 
 12. Método "mostrar_rentas": muestra en la consola una lista de las rentas registradas, con detalles como el nombre del cliente, licencia de manejo y fechas de recolección y entrega.
+
+13. Método "registrar_vehículo": permite al usuario registrar un nuevo vehículo. Solicita el identificador, tipo, fecha de mantenimiento y tipo de vehículo (pasajero o carga), y agrega el vehículo a la lista de vehículos.
+
+14. Método "cargar_datos": carga datos previamente guardados desde archivos. Lee información de clientes, vehículos y rentas desde archivos de texto y almacena estos datos en las listas correspondientes.
+
+15. Método "guardar_datos": guarda los datos de clientes, vehículos y rentas en archivos de texto para su posterior recuperación.
+
+16. Método "menú": muestra un menú de opciones y permite al usuario interactuar con el programa. Incluye registrar clientes, mostrar clientes, mostrar vehículos, registrar rentas, mostrar rentas, registrar vehículos, guardar datos, cargar datos y salir.
     
   
+</p>
+
+<hr>
+
+### *Menú:*
+<p align="justify">
+Proporciona una forma sencilla de crear menús interactivos en programas de consola. Nos permite definir opciones con funciones asociadas, muestra el menú al usuario, este lee y valida las selecciones del usuario y ejecuta las funciones correspondientes a las opciones seleccionadas.
+
+1. Definición de clase "Menú": se define la clase "Menú", que encapsula la funcionalidad relacionada con la creación y gestión de menús interactivos.
+
+2. Método "mostrar_menú": muestra un menú en la consola. Recibe un diccionario de "opciones", donde la clave son los números o letras de opción y los valores son tuplas que contienen el texto descriptivo de la opción y una función que se ejecutará cuando se seleccione esa opción. Recorre las claves ordenadas con "sorted" y muestra cada opción con su descripción.
+
+3. Método "leer_opcion": permite al usuario ingresar una opción al menú. Toma como argumento el diccionario de "opciones" y entra en un bucle hasta que se ingrese una opción válida. Si la opción ingresada no se encuentra en el diccionario, muestra un mensaje de error y solicita nuevamente la opción. Finalmente, devuelve la opción seleccionada.
+
+4. Método "ejecutar_opcion": se encarga de ejecutar la función asociada a la opción seleccionada por el usuario. Recibe como argumentos la "opcion" seleccionada y el diccionario de "opciones". Accede al valor de la opción y ejecuta la función que está en la segunda posición de la tupla utilizando "opciones[opcion][1]()".
+
+5. Método "generar_menú" genera un menú interactivo completo. Recibe el diccionario de "opciones" y la "salida" que indica cuando termina. El método entra en un bucle que se ejecuta hasta que la "opción" sea igual a:
+
+- "opción_salida": en cada iteración, muestra el menú con 
+
+- "self.mostrar_menu(opciones)": lee la opción del usuario con 
+
+- "self.leer_opcion(opcion, opciones): repite el ciclo. Cuando se selecciona la "opcion_salida", el bucle termina y el menú se cierra.
+
 </p>
 
 <hr>
@@ -401,6 +433,10 @@ Se utiliza para gestionar un sistema de registro y renta de  vehículos, interac
 
 
 - RAMIREZ AGUILERA JESUS EMMANUEL:
+
+-En específico, esta experiencia ha posibilitado la consolidación de competencias relacionadas con la utilización de tipos de datos avanzados y ha fomentado un entendimiento más profundo de la Programación Orientada a Objetos (POO), especialmente resaltando la implementación de los denominados "métodos mágicos" en Python. Estos componentes representan activos invaluables en el ámbito del desarrollo de software, al proporcionar flexibilidad y la capacidad de adaptarse a medida que los proyectos avanzan y se enfrentan a nuevos desafíos. En resumen, esta práctica ha fortalecido nuestra base de conocimiento en POO y ha enriquecido nuestras habilidades en el manejo de tipos de datos avanzados, dotándonos de las herramientas necesarias para abordar con éxito proyectos en constante evolución.
+
+  
 
 
 
