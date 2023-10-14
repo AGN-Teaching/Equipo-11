@@ -188,7 +188,17 @@ El diagrama UML proporcionan una representación visual de las clases, objetos, 
 
 ![uml_transporte](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/d1cd5347-59ce-4e81-bfaf-dac6c5e3ddae)
 
+### **Diagrama UML "Cliente":**
 
+![cliente](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/4ca38152-a813-4b4c-94e5-3d27f32b944d)
+
+<p align="justify">
+Permite crear instancias de clientes con sus atributos iniciales y proporciona un método para obtener una representación de los datos del cliente en un formato específico.
+  
+  
+</p>
+
+<hr>
 
 
 
