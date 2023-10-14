@@ -388,26 +388,21 @@ Se utiliza para gestionar un sistema de registro y renta de  vehículos, interac
 
 <hr>
 
-### *Menú:*
+### *Main:*
 <p align="justify">
-Proporciona una forma sencilla de crear menús interactivos en programas de consola. Nos permite definir opciones con funciones asociadas, muestra el menú al usuario, este lee y valida las selecciones del usuario y ejecuta las funciones correspondientes a las opciones seleccionadas.
+Este código configura y ejecuta el sistema de transporte definido en la clase "Sistema de Transporte" cuando se ejecuta como un programa independiente.
 
-1. Definición de clase "Menú": se define la clase "Menú", que encapsula la funcionalidad relacionada con la creación y gestión de menús interactivos.
+1. Importación de "SistemaDeTransporte": importa la clase "SistemaDeTransporte" desde el módulo "sistemadetransporte". Esto significa que el código en "SistemaDeTransporte" esta disponible para su uso en este archivo.
 
-2. Método "mostrar_menú": muestra un menú en la consola. Recibe un diccionario de "opciones", donde la clave son los números o letras de opción y los valores son tuplas que contienen el texto descriptivo de la opción y una función que se ejecutará cuando se seleccione esa opción. Recorre las claves ordenadas con "sorted" y muestra cada opción con su descripción.
+2. Función "main": es el punto de entrada principal para el programa. Dentro de la función:
 
-3. Método "leer_opcion": permite al usuario ingresar una opción al menú. Toma como argumento el diccionario de "opciones" y entra en un bucle hasta que se ingrese una opción válida. Si la opción ingresada no se encuentra en el diccionario, muestra un mensaje de error y solicita nuevamente la opción. Finalmente, devuelve la opción seleccionada.
+- Se crea una instancia de la clase "SistemDeTransporte" y se almacena en una variable llamada "sistema".
 
-4. Método "ejecutar_opcion": se encarga de ejecutar la función asociada a la opción seleccionada por el usuario. Recibe como argumentos la "opcion" seleccionada y el diccionario de "opciones". Accede al valor de la opción y ejecuta la función que está en la segunda posición de la tupla utilizando "opciones[opcion][1]()".
+- Luego, se llama al método "menú" de la instancia "sistema". Inicia la funcionalidad del sistema de transporte y muestra un menú interactivo.
 
-5. Método "generar_menú" genera un menú interactivo completo. Recibe el diccionario de "opciones" y la "salida" que indica cuando termina. El método entra en un bucle que se ejecuta hasta que la "opción" sea igual a:
+3. Bloque "if _ _ name _ _" = = "_ _ main _ _": es una estructura condicional que comprueba si el script se está ejecutando como un programa independiente o si se está importando como un módulo en otro script. Cuando ejecutas este script directamente, _ _ name _ _ se establece en "_ _ main _ _". Por lo tanto, el bloque de código dentro de if _ _ name _ _ == "_ _ main _ _": se ejecutará solo si el script se ejecuta como un programa independiente.
 
-- "opción_salida": en cada iteración, muestra el menú con 
-
-- "self.mostrar_menu(opciones)": lee la opción del usuario con 
-
-- "self.leer_opcion(opcion, opciones): repite el ciclo. Cuando se selecciona la "opcion_salida", el bucle termina y el menú se cierra.
-
+Dentro de este bloque, se llama a la función "main()", que inicia la ejecución principal del programa. Esto significa que cuando ejecutas este archivo como un programa, se creará una instancia del sistema de transporte y se mostrará su menú interactivo.
 </p>
 
 <hr>
