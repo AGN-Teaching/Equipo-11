@@ -592,9 +592,7 @@ Dentro de este bloque, se llama a la función "main()", que inicia la ejecución
 
 - RAMIREZ AGUILERA JESUS EMMANUEL:
 
--En específico, esta experiencia ha posibilitado la consolidación de competencias relacionadas con la utilización de tipos de datos avanzados y ha fomentado un entendimiento más profundo de la Programación Orientada a Objetos (POO), especialmente resaltando la implementación de los denominados "métodos mágicos" en Python. Estos componentes representan activos invaluables en el ámbito del desarrollo de software, al proporcionar flexibilidad y la capacidad de adaptarse a medida que los proyectos avanzan y se enfrentan a nuevos desafíos. En resumen, esta práctica ha fortalecido nuestra base de conocimiento en POO y ha enriquecido nuestras habilidades en el manejo de tipos de datos avanzados, dotándonos de las herramientas necesarias para abordar con éxito proyectos en constante evolución.
-
-  
+-
 
 
 
