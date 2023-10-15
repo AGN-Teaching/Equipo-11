@@ -571,6 +571,45 @@ Dentro de este bloque, se llama a la función "main()", que inicia la ejecución
 <hr>
 
 
+# CONVENCIONES DEL LENUAJE DE PROGRAMACIÓN
+
+<p align="justify">
+
+1. __CLIENTE__
+
+   - La clase "Cliente" sigue las convenciones de nomenclatura, con un constructor "_ init _" para inicializar los atributos y un método "guardar_datos" para devolver una representación en cadena de la instancia.
+  
+2. __RENTA__
+
+   - La clase "Renta" sigue las mismas convenciones de nomenclatura, con atributos para almacenar información de la renta y un método "guardar_datos" para devolver una representación en cadena.
+  
+3. __TRANSPORTE__
+
+   - La clase "Transporte" utiliza las convenciones de nomenclatura y proporciona un método para verificar la disponibilidad del vehículo en una fecha determinada.
+  
+   - Las clases derivadas, como "TransportePasajeros" y "TransporteCarga", siguen las mismas convenciones y agregan atributos específicos para su tipo de vehículo, con métodos para guardar datos de manera específica.   
+
+
+4. __MENÚ__
+
+   - La clase "Menu" se encarga de mostrar un menú de opciones, leer la elección del usuario y ejecutar las acciones asociadas a esas opciones.
+  
+     
+5. __SISTEMA DE TRANSPORTE__
+
+   - La clase "SistemaDeTransporte" es la clase principal que gestiona clientes, vehículos, rentas y proporciona funcionalidades como la carga y guardado de datos. También se encarga de mostrar un menú para interactuar con el sistema.
+
+  
+6. __MAIN__
+
+   - La función "main()" se encarga de crear una instancia de "SistemaDeTransporte" y ejecutar el menú principal.
+
+</p>
+
+<p align="justify">
+  Todos los código siguen las concenciones de Python y utilizan las clases y métodos para organizar y gestionar relacionados con un sistema de transporte. Cada clase tiene atributos y métodos apropiadamente nombrados, lo que hace ser más comprendible el código.
+</p>
+
 # CONCLUSIONES:
 
 -NAVA MARTINEZ DANIELA: 
