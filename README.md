@@ -611,6 +611,43 @@ Dentro de este bloque, se llama a la función "main()", que inicia la ejecución
 </p>
 
 
+# DISEÑO Y DESCRIPCIÓN DEL MODELO ORIENTADO A OBJETOS
+
+<p align="justify">
+
+1. __CLIENTE__
+
+   - Clase _Cliente_: Representa un cliente con atributos como "nombre", "identificación" y "tarjeta de crédito". Tiene un constructor "(_ _init_ _)" para inicializar estos atributos y un método guardar_datos para obtener una representación en cadena del cliente
+  
+2. __RENTA__
+
+   - Clase _Renta_: Representa una renta de vehículos con atributos como "fecha_inicio", "fecha_fin", "nombre_cliente", "licencia_manejo", y "vehículos" rentados. Utiliza el módulo datetime para trabajar con fechas. Al igual que "Cliente", tiene un constructor para inicializar los atributos y un método "guardar_datos" para obtener una representación en cadena de la renta.
+  
+3. __TRANSPORTE__
+
+   - Clase _Transporte_: Modela un vehículo con atributos como "identificador", "tipo_vehículo", y "fecha_mantenimiento". Contiene un método "verificar_disponibilidad" para comprobar si el vehículo está disponible en una fecha específica y un método "guardar_datos" para obtener una representación en cadena del vehículo.
+  
+   - Clases derivadas "TransportePasajeros" y "TransporteCarga": Estas clases heredan de "Transporte" y añaden atributos específicos para su tipo de vehículo, como "numero_pasajeros" para transporte de pasajeros y "capacidad_carga" para transporte de carga. También sobrescriben el método "guardar_datos" para obtener una representación en cadena específica de cada tipo de vehículo.  
+
+
+4. __MENÚ__
+
+   - Clase _Menu_: Gestiona un menú con opciones y brinda métodos para mostrarlo, leer la elección del usuario y ejecutar las acciones correspondientes.
+  
+     
+5. __SISTEMA DE TRANSPORTE__
+
+   - Clase _SistemaDeTransporte_: Es la clase principal que administra el sistema de transporte. Tiene atributos para almacenar listas de vehículos, clientes y registros de rentas. Proporciona métodos para interactuar con el sistema, como registrar clientes, mostrar clientes, mostrar vehículos, registrar rentas, mostrar rentas, registrar vehículos y más. También incluye funcionalidades para cargar y guardar datos desde y hacia archivos.
+  
+   - La clase utiliza la librería "datetime" para manejar fechas y otros módulos locales que has creado ("Cliente", "Renta", "TransportePasajeros", "TransporteCarga", "Menu") para facilitar la organización y reutilización del código.
+
+  
+6. __MAIN__
+
+   - La función "main()" crea una instancia de la clase SistemaDeTransporte y ejecuta su menú principal.
+
+</p>
+
 
 # MANEJO DE ERRORES
 
