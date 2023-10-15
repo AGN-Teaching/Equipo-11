@@ -673,21 +673,45 @@ Dentro de este bloque, se llama a la función "main()", que inicia la ejecución
 # CONCLUSIONES:
 
 __NAVA MARTINEZ DANIELA:__ 
+<p align="justify">
+  
+En el transcurso de este proyecto final para la asignatura de __Programación Orientada a Objetos__, se han aplicado con éxito diversos conceptos fundamentales de la POO. La creación de un sistema de gestión de transporte nos ha proporcionado la oportunidad de demostrar una comprensión sólida de los principios de POO, y hemos aplicado estos conceptos de manera efectiva en el diseño e implementación de la aplicación.
+
+- __Clases y Objetos__: La definición de clases como "Cliente", "Renta", y varios tipos de vehículos de transporte ha permitido encapsular datos y comportamientos relacionados en objetos. Hemos utilizado estas clases para crear instancias que representen clientes, rentas y vehículos de transporte, lo que facilita la modelización y manipulación de estos conceptos dentro de la aplicación.
+
+- __Herencia__: La utilización de la herencia en nuestro proyecto se ha destacado en las clases derivadas "TransportePasajeros" y "TransporteCarga", que han heredado de la clase base "Transporte". Esto no solo ha simplificado la reutilización de código, sino que también ha permitido especializar el comportamiento de los objetos según su tipo.
+
+- __Polimorfismo__: Hemos aplicado el polimorfismo al sobrescribir el método "guardar_datos" en las clases derivadas. Gracias a esto, los objetos pueden actuar de manera diferente según su tipo, lo que mejora la flexibilidad y modularidad de nuestro código.
+
+- __Relaciones entre clases__: El proyecto ha demostrado con éxito diversas relaciones entre clases, como la composición en la clase "SistemaDeTransporte", que mantiene listas de clientes, vehículos y rentas. Además, hemos implementado una relación de agregación entre "Renta" y "Transporte", permitiendo que una renta contenga múltiples vehículos de transporte. 
+
+- __Entrada y salida__: Hemos implementado funciones de entrada y salida de datos, permitiendo que los usuarios interactúen con la aplicación a través de un menú intuitivo. Además, hemos asegurado la persistencia de los datos al cargar y guardar información desde y hacia archivos de texto. Esto garantiza que los datos se mantengan a lo largo de diferentes sesiones de ejecución del programa.
+
+- __Excepciones__: Hemos incorporado manejo de excepciones para tratar posibles errores en la entrada de fechas en un formato incorrecto. 
 
 
+El uso de diagramas __UML__ ha enriquecido nuestra comprensión del diseño del sistema y nos ha proporcionado una representación visual de la estructura y las relaciones entre clases. Esto ha sido particularmente útil para comunicar y documentar el diseño del proyecto.  
+
+Nuestro proyecto no solo refleja la aplicación de los conceptos cavle de Pogramación Orientada a Objetos, si no que también representa todo el conocimiento adquirido durante el trimestre desde la organización del código. 
+</p>
 
 
 
 __OLGUIN RICO ANAID:__
+<p align="justify">
+  
 + La programacionn orientada a objetos nos proporciona una forma estructurada y modular para resolver nuestros problemas.
 + Facilita la creacion y el mantenimiento del codigo.
 + La herencia y polimorfismo nos ayudan a reutilizar codigo al heredar atributos y metodos de una clase padre a una o varias clases hijas, asi estas aprovechan la funcionalidad de la clase padre.
 + A traves del desarrollo del programa se pueden encontrar mejoras para el funcionamiento del sistema y gracias al diseño modular estas mejoras pueden añadirse apoyandose del codigo existente, y hacer pruebas sin afectar el mismo. 
 + El diseño de un programa orientado a objetos requiere una buena comprension del problema a desarrollar, ya que puede tener ambiguedades debido al lenguaje que usemos al definir nuestros objetos.
+</p>
 
 
 
 __RAMIREZ AGUILERA JESUS EMMANUEL:__
+<p align="justify">
+  
 + La culminación de nuestro proyecto de Programación Orientada a Objetos representa la aplicación exitosa de los conceptos esenciales que hemos aprendido durante el trimestre. Hemos incorporado eficazmente el polimorfismo, la herencia, las clases y subclases en el diseño de un servicio de transporte que ofrece modalidades tanto de pasajeros como de carga, cada una adaptada a sus propias necesidades.
 
 + La elección de Python como nuestro lenguaje de programación fue fundamental, ya que nuestra familiaridad con este lenguaje nos permitió abordar los desafíos con eficiencia y precisión. La programación orientada a objetos nos brindó una estructura modular que facilita el desarrollo y la mejora continua del sistema. La herencia y el polimorfismo permitieron la reutilización de código de manera efectiva, mientras que los diagramas UML brindaron una representación visual clara de las clases y sus relaciones, mejorando la comunicación entre los desarrolladores y partes interesadas.
@@ -695,6 +719,7 @@ __RAMIREZ AGUILERA JESUS EMMANUEL:__
 + Este proyecto nos ha enseñado la importancia de comprender a fondo el problema a resolver y cómo modelar clases y sus relaciones de manera efectiva. Las relaciones entre clases, como la generalización, asociación, agregación y composición, se han convertido en una parte integral de nuestro enfoque en la construcción de sistemas de software complejos.
 
 + En conclusión, nuestro proyecto de Programación Orientada a Objetos ha demostrado que podemos aplicar con éxito los conceptos y herramientas aprendidos en el curso para abordar problemas del mundo real de manera efectiva y estructurada.
+</p>
 
 
 
