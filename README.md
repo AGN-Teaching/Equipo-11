@@ -302,7 +302,43 @@ Se refieren a cómo las clases interactúan y se relacionan entre sí dentro de 
 
 ![relacion](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/301a3a32-3c3c-4ac5-aef8-56e1490fca83)
 
+<p align="justify">
+  1. Sistema Transporte.
 
+  - Es el componente principal que interactúa con las otras clases para gestionar el sistema de alquiler de vehículos.
+    
+  - Utiliza la clase Menú para crear un menú interactivo para el usuario.
+
+  - Tiene relaciones de composición con las clases Cliente, Renta y las clases derivadas de Transporte (almacena clientes, registros de rentas y vehículos).
+
+
+  2. Renta.
+
+  - Se encarga de representar una transacción de alquiler de vehículos.
+
+  - Puede o no tener una relación de composición con la clase Cliente, ya que almacena el nombre del cliente en la renta.**
+
+
+  3. Cliente.
+
+  - Representa a un cliente y almacena información como su nombre, identificación y tarjeta de crédito.
+
+  - No presenta relaciones directas con otras clases.
+
+
+ 4. Menú.
+
+  - Se encarga de interactuar con el usuario y proporciona un menú de opciones.
+
+  - No presenta relaciones directas con las otras clases. Su función es proporcionar una interfaz de usuario para interactuar con el sistema.
+
+
+ 5. Transporte.
+
+  - Representa vehículos en general y contiene propiedades como identificador, tipo de vehículo y fecha de mantenimiento.
+
+  - Las clases "TransportePasajeros" y "TransporteCarga" heredan de la clase Transporte, lo que establece una relación de herencia. Estas clases especializadas heredan propiedades y métodos de la clase base.
+</p>
 
 
 # DOCUMENTACIÓN
