@@ -303,6 +303,7 @@ Se refieren a cómo las clases interactúan y se relacionan entre sí dentro de 
 ![relacion](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/301a3a32-3c3c-4ac5-aef8-56e1490fca83)
 
 <p align="justify">
+  
   1. Sistema Transporte.
 
   - Es el componente principal que interactúa con las otras clases para gestionar el sistema de alquiler de vehículos.
@@ -338,6 +339,7 @@ Se refieren a cómo las clases interactúan y se relacionan entre sí dentro de 
   - Representa vehículos en general y contiene propiedades como identificador, tipo de vehículo y fecha de mantenimiento.
 
   - Las clases "TransportePasajeros" y "TransporteCarga" heredan de la clase Transporte, lo que establece una relación de herencia. Estas clases especializadas heredan propiedades y métodos de la clase base.
+    
 </p>
 
 
