@@ -610,6 +610,29 @@ Dentro de este bloque, se llama a la función "main()", que inicia la ejecución
   Todos los código siguen las concenciones de Python y utilizan las clases y métodos para organizar y gestionar relacionados con un sistema de transporte. Cada clase tiene atributos y métodos apropiadamente nombrados, lo que hace ser más comprendible el código.
 </p>
 
+
+
+# MANEJO DE ERRORES
+
+![errores1](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/6977deb2-8711-40c2-a307-377655910f3b)
+
+![errores2](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/9ad5dedc-d93b-4f47-8fe6-3659c1a57965)
+
+![errores3](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/59233659-edb3-4614-8459-10725d0ba57c)
+
+
+# PRUEBAS
+
+![pruebas1](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/c381aa5a-a4f3-4dbb-96aa-4af02ad095a5)
+
+![pruebas2](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/5af4d231-e118-4e64-b715-134f693ecb7d)
+
+![pruebas4](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/d0f98c19-47a5-4fe8-9722-6d9c43410e61)
+
+![pruebas5](https://github.com/AGN-Teaching/Equipo-11/assets/125592302/852b57b6-8291-4d4e-b509-92f591600b2b)
+
+
+
 # CONCLUSIONES:
 
 __NAVA MARTINEZ DANIELA:__ 
