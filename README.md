@@ -588,10 +588,7 @@ Dentro de este bloque, se llama a la función "main()", que inicia la ejecución
 
 
 
-
-
 - RAMIREZ AGUILERA JESUS EMMANUEL:
-
 + La culminación de nuestro proyecto de Programación Orientada a Objetos representa la aplicación exitosa de los conceptos esenciales que hemos aprendido durante el trimestre. Hemos incorporado eficazmente el polimorfismo, la herencia, las clases y subclases en el diseño de un servicio de transporte que ofrece modalidades tanto de pasajeros como de carga, cada una adaptada a sus propias necesidades.
 
 + La elección de Python como nuestro lenguaje de programación fue fundamental, ya que nuestra familiaridad con este lenguaje nos permitió abordar los desafíos con eficiencia y precisión. La programación orientada a objetos nos brindó una estructura modular que facilita el desarrollo y la mejora continua del sistema. La herencia y el polimorfismo permitieron la reutilización de código de manera efectiva, mientras que los diagramas UML brindaron una representación visual clara de las clases y sus relaciones, mejorando la comunicación entre los desarrolladores y partes interesadas.
