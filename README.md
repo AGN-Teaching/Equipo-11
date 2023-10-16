@@ -32,7 +32,7 @@ El proyecto final del curso "Programación Orientada a Objetos" se concentra en 
 </p>
 
 <p align="justify">
-El propósito principal de este proyecto es desarrollar un servicio de transporte que ofrece dos modalidades: transporte de pasajeros y transporte de carga,cada una con sus particularidades. Ambas modalidades requieren la recopilación de información sobre las personas que conducirán, como nombres y licencias de manejo. Además, al inicio del proceso, se espera que un cliente registre ciertos datos, y en el caso de los vehículos, se debe verificar su disponibilidad.
+El propósito principal de este proyecto es desarrollar un servicio de transporte que ofrece dos modalidades: transporte de pasajeros y transporte de carga, cada una con sus particularidades. Ambas modalidades requieren la recopilación de información sobre las personas que conducirán, como nombres y licencias de manejo. Además, al inicio del proceso, se espera que un cliente registre ciertos datos, y en el caso de los vehículos, se debe verificar su disponibilidad.
 </p>
 
 <p align="justify">
@@ -63,11 +63,11 @@ En la creación de nuestro proyecto, empleamos el lenguaje de programación Pyth
 </p>
 
 <p align="justify">
-La clase "Transporte" es fundamental para determinar si un vehículo se encuentra en mantenimiento o está disponible.Dentro de esta clase se encuentran los atributos de nuestros transportes, un identificador para facilitar la busqueda y solicitud de los vehiculos, asi como el tipo de vehiculo a rentar  y las fechas de mantenimiento en donde no se encontraran disponibles.Además, dentro de esta clase, distinguimos dos tipos de transportes: los de pasajeros y los de carga. Esto nos permite conocer la capacidad de personas o peso, según corresponda.
+La clase "Transporte" es fundamental para determinar si un vehículo se encuentra en mantenimiento o está disponible. Dentro de esta clase se encuentran los atributos de nuestros transportes, un identificador para facilitar la búsqueda y solicitud de los vehículos, asi como el tipo de vehículo a rentar  y las fechas de mantenimiento en donde no se encontraran disponibles. Además, dentro de esta clase, distinguimos dos tipos de transportes: los de pasajeros y los de carga. Esto nos permite conocer la capacidad de personas o peso, según corresponda.
 </p>
 
 <p align="justify">
-La clase "Sistema de Transporte" desempeña un papel crucial al recopilar todos los datos necesarios para el proyecto. Esto incluye la solicitud de fechas de recolección y entrega, la cantidad de pasajeros, así como los datos del cliente y los detalles de la tarjeta de crédito, esta clase tambien nos permite de manera manual ingresar datos de vehiculos, asi como subirlos directamente de un archivo de texto y guardarlos para su posterior uso. 
+La clase "Sistema de Transporte" desempeña un papel crucial al recopilar todos los datos necesarios para el proyecto. Esto incluye la solicitud de fechas de recolección y entrega, la cantidad de pasajeros, así como los datos del cliente y los detalles de la tarjeta de crédito, esta clase tambien nos permite de manera manual ingresar datos de vehículos, asi como subirlos directamente de un archivo de texto y guardarlos para su posterior uso. 
 </p>
 
 <p align="justify">
@@ -196,7 +196,7 @@ El diagrama UML proporcionan una representación visual de las clases, objetos, 
   
 - La clase se llama "cliente".
 
-- Tiene tres atributos: "nombre", "identificación" y "tarjeta" todos de tipo string.
+- Tiene tres atributos: "nombre", "identificación" y "tarjeta" todos de tipo String.
 
 - Cuenta con un constructor (_ _ init _ _) que toma tres parámetros: "nombre", "identificación" y "tarjeta" y les asigna atributos correspondientes.
 
@@ -349,7 +349,7 @@ Se refieren a cómo las clases interactúan y se relacionan entre sí dentro de 
 <p align="justify">
 Esta clase permite crear objetos de registro de renta, donde cada objeto almacena información como las flechas, el nombre del cliente, la licencia de manejo y una lista de vehículos relacionados con la renta. El método "guardar_datos" permite formatear la información para ser guardada.
   
-   1. Definición de la clase "RegistroRenta": representa un registro de una renta de vehículos. Esta clase tiene un contructor "_ _init_ _" y un método "guardar_datos".
+   1. Definición de la clase "RegistroRenta": representa un registro de una renta de vehículos. Esta clase tiene un constructor "_ _init_ _" y un método "guardar_datos".
       
    2. Constructor "_ _init_ _": recibe varios parámetros:
       
@@ -385,7 +385,7 @@ Esta clase permite crear objetos de registro de renta, donde cada objeto almacen
 
 - Utiliza "join" para unir elementos de la lista de vehículos en una cadena, separados por "&"
 
-- Finalmente, el método "guardar_datos" devuelve la cadena formateada conmo resultado.
+- Finalmente, el método "guardar_datos" devuelve la cadena formateada como resultado.
   
 </p>
 
@@ -435,7 +435,7 @@ Define una jerarquía de clases para representar diferentes tipos de vehículos 
 
 ### **Menú:**
 <p align="justify">
-Proporciona una estructura para crear y gestionar un menú interactivo en un programa, permitiendo al usuario seleccionar didefrentes ocpciones y ejecutar acciones asociadas con esas opciones.
+Proporciona una estructura para crear y gestionar un menú interactivo en un programa, permitiendo al usuario seleccionar diferentes opciones y ejecutar acciones asociadas con esas opciones.
   
 1. Método "mostrar_menú": se utiliza para mostrar el menú en la consola. Recibe un diccionario de opciones como argumento, donde las claves son las selecciones posibles del menú y los valores son listas con dos elementos. El primer elemento de cada lista es la descripción de la opción, y el segundo elemento es una función que se ejecutará si se selecciona esa opción.
 
@@ -492,7 +492,7 @@ Permite crear instancias de clientes con sus atributos iniciales y proporciona u
      
  - Los atributos "self.nombre", "self.identificacion", y "self.tarjeta_credito" almacenan los valores de los argumentos en la instancia del cliente. Estos atributos permiten acceder a la información del cliente más adelante en el programa..
       
-2. Método "guardar_datos": se utiliza para gauardar los datos del cliente:
+2. Método "guardar_datos": se utiliza para guardar los datos del cliente:
 
 - El método devuelve una cadena que contiene la información del cliente en un formato específico. En este caso, la información se concatena utilizando comas (",").
      
@@ -555,7 +555,7 @@ Se utiliza para gestionar un sistema de registro y renta de  vehículos, interac
 <p align="justify">
 Este código configura y ejecuta el sistema de transporte definido en la clase "Sistema de Transporte" cuando se ejecuta como un programa independiente.
 
-1. Importación de "SistemaDeTransporte": importa la clase "SistemaDeTransporte" desde el módulo "sistemadetransporte". Esto significa que el código en "SistemaDeTransporte" esta disponible para su uso en este archivo.
+1. Importación de "SistemaDeTransporte": importa la clase "SistemaDeTransporte" desde el módulo "sistemadetransporte". Esto significa que el código en "SistemaDeTransporte" está disponible para su uso en este archivo.
 
 2. Función "main": es el punto de entrada principal para el programa. Dentro de la función:
 
@@ -607,7 +607,7 @@ Dentro de este bloque, se llama a la función "main()", que inicia la ejecución
 </p>
 
 <p align="justify">
-  Todos los código siguen las concenciones de Python y utilizan las clases y métodos para organizar y gestionar relacionados con un sistema de transporte. Cada clase tiene atributos y métodos apropiadamente nombrados, lo que hace ser más comprendible el código.
+  Todos los código siguen las convenciones de Python y utilizan las clases y métodos para organizar y gestionar relacionados con un sistema de transporte. Cada clase tiene atributos y métodos apropiadamente nombrados, lo que hace ser más comprensible el código.
 </p>
 
 
@@ -692,7 +692,7 @@ En el transcurso de este proyecto final para la asignatura de __Programación Or
 
 El uso de diagramas __UML__ ha enriquecido nuestra comprensión del diseño del sistema y nos ha proporcionado una representación visual de la estructura y las relaciones entre clases. Esto ha sido particularmente útil para comunicar y documentar el diseño del proyecto.  
 
-Nuestro proyecto no solo refleja la aplicación de los conceptos cavle de Pogramación Orientada a Objetos, si no que también representa todo el conocimiento adquirido durante el trimestre desde la organización del código. 
+Nuestro proyecto no solo refleja la aplicación de los conceptos cable de Programación Orientada a Objetos, si no que también representa todo el conocimiento adquirido durante el trimestre desde la organización del código. 
 </p>
 
 
@@ -700,11 +700,13 @@ Nuestro proyecto no solo refleja la aplicación de los conceptos cavle de Pogram
 __OLGUIN RICO ANAID:__
 <p align="justify">
   
-+ La programacionn orientada a objetos nos proporciona una forma estructurada y modular para resolver nuestros problemas.
-+ Facilita la creacion y el mantenimiento del codigo.
-+ La herencia y polimorfismo nos ayudan a reutilizar codigo al heredar atributos y metodos de una clase padre a una o varias clases hijas, asi estas aprovechan la funcionalidad de la clase padre.
-+ A traves del desarrollo del programa se pueden encontrar mejoras para el funcionamiento del sistema y gracias al diseño modular estas mejoras pueden añadirse apoyandose del codigo existente, y hacer pruebas sin afectar el mismo. 
-+ El diseño de un programa orientado a objetos requiere una buena comprension del problema a desarrollar, ya que puede tener ambiguedades debido al lenguaje que usemos al definir nuestros objetos.
++ La programación orientada a objetos nos proporciona una forma estructurada y modular para resolver nuestros problemas.
++ Facilita la creación y el mantenimiento del código.
++ La herencia y polimorfismo nos ayudan a reutilizar código al heredar atributos y métodos de una clase padre a una o varias clases hijas, asi estas aprovechan la funcionalidad de la clase padre.
++ A través del desarrollo del programa se pueden encontrar mejoras para el funcionamiento del sistema y gracias al diseño modular estas mejoras pueden añadirse apoyándose del código existente, y hacer pruebas sin afectar el mismo.
++ La persistencia de datos fue fundamental en este proyecto para llevar un registro organizado tanto de nuestros vehículos como de los clientes que se registran, esto permite una mejor organización y nos abre posibilidades para trabajar y utilizar las características de nuestros objetos. 
++ El diseño de un programa orientado a objetos requiere una buena comprensión del problema a desarrollar, ya que puede tener ambigüedades debido al lenguaje que usemos al definir nuestros objetos.
++Estando mas familiarizada con el lenguaje Java fue un poco confuso usar otro tipo de lenguaje para la programación de nuestra aplicación, pero usando los conceptos de la programación orientada a objetos sigue siendo muy similar la creación de nuestro programa. 
 </p>
 
 
